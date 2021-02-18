@@ -13,17 +13,17 @@ html[data-theme="light"] {
   --ls-secondary-background-color: #f3f7f8;
   --ls-tertiary-background-color: #fff;
 /* 
-#CHANGED:0  light mode division line it used to be green
+#CHANGED:60 light mode division line it used to be green
 */
   --ls-quaternary-background-color: #e1f0fe;
   --ls-table-tr-even-background-color: #f4f5f7;
   --ls-active-primary-color: #D49233;
 /* 
-#CHANGED:0  light mode: main color for internal links
+#CHANGED:70 light mode: main color for internal links
 */
   --ls-active-secondary-color: #A56B16;
 /* 
-#CHANGED:0  light: hover color
+#CHANGED:80 light: hover color
 */
   --ls-block-properties-background-color: var(--ls-tertiary-background-color);
   --ls-search-background-color: var(--ls-primary-background-color);
@@ -81,24 +81,24 @@ html[data-theme="light"] {
   --ls-menu-hover-color: #1c3444;
   --ls-primary-text-color: #FAF2D6;
 /* 
-#CHANGED:0 main text color
+#CHANGED:100 main text color
 */
   --ls-secondary-text-color: #c7c7c7;
   --ls-title-text-color: #d3a628;
   /* 
-#CHANGED:0 page text title color 
+#CHANGED:110 page text title color 
    */
   --ls-link-text-color: #d3a628;
   /*
-#CHANGED:0 text color 
+#CHANGED:140 text color 
   */
   --ls-link-text-hover-color: #E6992A;
   /*  
-#CHANGED:0 hover over links
+#CHANGED:40 hover over links
    */
   --ls-link-ref-text-color: #d3a628;
   /* 
-  #CHANGED:0 text [[link]]  color
+  #CHANGED:130 text [[link]]  color
    */
   --ls-link-ref-text-hover-color: var(--ls-link-text-hover-color);
   --ls-tag-text-color: var(--ls-link-text-color);
@@ -116,7 +116,7 @@ html[data-theme="light"] {
   --ls-page-blockquote-border-color: var(--ls-secondary-text-color);
   --ls-page-inline-code-color: #fff;
 /* 
-#CHANGED:0  inline code
+#CHANGED:50 inline code
 */
   --ls-page-inline-code-bg-color: #575757;
   --ls-page-title-size: 28px;
@@ -126,11 +126,11 @@ html[data-theme="light"] {
   --ls-head-text-color: var(--ls-link-text-color);
   --ls-icon-color: #d3a628;
   /*
-  #CHANGED:0 logo, back arrows 
+  #CHANGED:90 logo, back arrows 
     */
   --ls-search-icon-color: #d3a628;
   /* 
-  #CHANGED:0 search bar 
+  #CHANGED:120 search bar 
    */
   --ls-a-chosen-bg: #172a36;
   --ls-right-sidebar-code-bg-color: #04303c;
@@ -155,7 +155,7 @@ html[data-theme="light"] {
   --datepicker-available-hoverbgcolor: #192731;
   --text-accent: #C8B16F;
   /* 
-  #CHANGED:0 file path text, and external links 
+  #CHANGED:30 file path text, and external links 
    */
   --text-hightlight: #D3A628;
   --inverted-text: #262626;
