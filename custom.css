@@ -1,28 +1,24 @@
-/* ==UserStyle==
-@name           Logseq-darker-hpx
-@namespace      https://github.com/cannibalox/logseq-dark-hpx
-@version        0.5.9
-@description    dark mode for logseq
-@author         _ph / www.hpx1.com
-@updateURL      https://raw.githubusercontent.com/cannibalox/logseq-dark-hpx/master/logseq-darker-hpx.user.css
-==/UserStyle== */
+/* ---------------
+last update
+2021-02-20 11:47
+--------------- */
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600&family=Barlow:wght@400;700;900&display=swap");
 .white-theme,
 html[data-theme="light"] {
   --ls-primary-background-color: white;
   --ls-secondary-background-color: #f3f7f8;
   --ls-tertiary-background-color: #fff;
-/* 
+  /* 
 #CHANGED:60 light mode division line it used to be green
 */
   --ls-quaternary-background-color: #e1f0fe;
   --ls-table-tr-even-background-color: #f4f5f7;
-  --ls-active-primary-color: #D49233;
-/* 
+  --ls-active-primary-color: #d49233;
+  /* 
 #CHANGED:70 light mode: main color for internal links
 */
-  --ls-active-secondary-color: #A56B16;
-/* 
+  --ls-active-secondary-color: #a56b16;
+  /* 
 #CHANGED:80 light: hover color
 */
   --ls-block-properties-background-color: var(--ls-tertiary-background-color);
@@ -70,7 +66,7 @@ html[data-theme="light"] {
 }
 .dark-theme {
   --ls-primary-background-color: #242424;
-/* 
+  /* 
 #CHANGED:0 background color 
 */
   --ls-secondary-background-color: rgb(22, 22, 22);
@@ -79,8 +75,8 @@ html[data-theme="light"] {
   --ls-search-background-color: #000000;
   --ls-border-color: #323232;
   --ls-menu-hover-color: #1c3444;
-  --ls-primary-text-color: #FAF2D6;
-/* 
+  --ls-primary-text-color: #faf2d6;
+  /* 
 #CHANGED:100 main text color
 */
   --ls-secondary-text-color: #c7c7c7;
@@ -92,7 +88,7 @@ html[data-theme="light"] {
   /*
 #CHANGED:140 text color 
   */
-  --ls-link-text-hover-color: #E6992A;
+  --ls-link-text-hover-color: #e6992a;
   /*  
 #CHANGED:40 hover over links
    */
@@ -106,8 +102,8 @@ html[data-theme="light"] {
   --ls-block-bullet-border-color: #d3a628;
   --ls-block-bullet-color: #d3a628;
   /*  
-  #CHANGED:0 bullet outline dot color
-   */ 
+  #CHANGED:30 bullet outline dot color
+   */
   --ls-block-highlight-color: #202e3a;
   --ls-page-checkbox-color: #4e7c9a;
   --ls-page-checkbox-border-color: #477ba8;
@@ -115,7 +111,7 @@ html[data-theme="light"] {
   --ls-page-blockquote-bg-color: var(--ls-secondary-background-color);
   --ls-page-blockquote-border-color: var(--ls-secondary-text-color);
   --ls-page-inline-code-color: #fff;
-/* 
+  /* 
 #CHANGED:50 inline code
 */
   --ls-page-inline-code-bg-color: #575757;
@@ -142,8 +138,8 @@ html[data-theme="light"] {
   --tagpills-border-radius: 4px;
   --accent-bgcolor: #16364a;
   --marker-switch-bgcolor: #39180deb;
-  --marker-switch-color: #D3A628;
-/* 
+  --marker-switch-color: #d3a628;
+  /* 
 #CHANGED:0 TODO LATER COLOR 
 */
   --marker-switch-opa: 0.7;
@@ -153,11 +149,11 @@ html[data-theme="light"] {
   --datepicker-active-color: white;
   --datepicker-available-hovercolor: #86f571;
   --datepicker-available-hoverbgcolor: #192731;
-  --text-accent: #C8B16F;
+  --text-accent: #c8b16f;
   /* 
   #CHANGED:30 file path text, and external links 
    */
-  --text-hightlight: #D3A628;
+  --text-hightlight: #d3a628;
   --inverted-text: #262626;
   --highlight-light: #0b0a0bf0;
   --ls-block-ref-link-text-color: #74ced8;
@@ -384,13 +380,17 @@ mark {
   color: var(--marker-switch-color);
 }
 
-[title="Change from TODO to DOING"] {
+/* 
+#OFF:0 removed changes to TODO, marging and emoji
+ */
+/*--------------------
+[title="Change from .TODO to DOING"] {
   background-color: var(--marker-switch-bgcolor);
   color: var(--marker-switch-color);
   opacity: 0.8;
   visibility: visible;
   display: inline-block;
-  margin: 0 5px 0 20px;
+  margin: 0px 6px 0px 2px;
   padding: 0 0 0 0px;
 }
 .todo:after {
@@ -399,8 +399,13 @@ mark {
   margin: 1px 0px;
   position: absolute;
   left: 22px;
-}
-[title="Change from DOING to TODO"] {
+} 
+---------------------*/
+/* 
+#OFF:5 removed changes to DOING, marging and emoji
+ */
+/*--------------------
+[title="Change from  .DOING to TODO"] {
   color: var(--text-accent);
   background-color: var(--marker-switch-bgcolor);
   opacity: 0.8;
@@ -415,14 +420,15 @@ mark {
   margin: 0 0px;
   position: absolute;
   left: 20px;
-}
+} 
+-------------------*/
 /*==================================================*/
 /* == codemirror code blocks == */
 /*==================================================*/
 .CodeMirror {
   /* font-family: Fira Code, Consolas, monospace; */
   /* 
-  #OFF:0 desactivated font 
+  #OFF:15 desactivated font 
   */
   font-size: 12px;
   color: #efefef;
@@ -668,11 +674,16 @@ iframe {
   font-weight: 600;
   color: var(--ls-primary-text-color);
 }
+/* 
+#OFF:0 daily journal emoji
+ */
+/*---------------------
 #journals .title h1:before {
   content: "📅 ";
   font-size: 24px;
   vertical-align: top;
 }
+------------------ */
 #journals .journal-item {
   border-top: 0px solid;
   border-top-color: var(--ls-border-color, #738694);
@@ -804,11 +815,14 @@ a.tag[href*="audio"]:after {
 
 /* 🧪⌨🎹🏛🏟❤✔☠🕸🦠👁🧠👨‍👩‍👦‍👦👹👽🛒👘🥊🥋⚽🕹🎧⚙🧱💊⚔💣📱📽📡📷📕📗📄✏🖌📝📆📅📌⏳⏰🍕🍜🚗🚅✈🌍☀🔥💧💤💥☢✴⛔❗⚠♻▶⏸🔴🔵🗨 🎲*/
 /*==================================================*/
-/* === DONE:0 ==== <!-- completed:2021-02-12T22:45:34.725Z -->*/
+/* === .DONE:0 ==== <!-- completed:2021-02-12T22:45:34.725Z -->*/
 /*==================================================*/
 .done {
-  text-decoration: none;
-  opacity: 1;
+  text-decoration: line-through #242424;
+  /* 
+#CHANGED:0 lowered opacity for done tasks
+ */
+  opacity: 0.7;
 }
 
 /*==================================================*/
@@ -884,21 +898,24 @@ a.external-link {
   #ADDED:0 underlined external text 
    */
 }
+
+/* 
+#OFF:20 symbol for external links 
+   */
+/*---------------------
 a.external-link:after {
   display: inline-block;
   content: "";
   width: 21px;
   height: 16px;
-  /* background: transparent 0% 200%/54% url("https://svgshare.com/i/SWJ.svg")
-    no-repeat; */
-/* 
-#OFF:20 symbol for external links 
-   */
-  /* filter: invert(3%) sepia(100%) saturate(1920%) hue-rotate(0deg)
-    brightness(1419%) contrast(249%); */
+  background: transparent 0% 200%/54% url("https://svgshare.com/i/SWJ.svg")
+    no-repeat;
+  filter: invert(3%) sepia(100%) saturate(1920%) hue-rotate(0deg)
+    brightness(1419%) contrast(249%);
   filter: invert(3%) sepia(0%) saturate(1920%) hue-rotate(0deg)
     brightness(1419%) contrast(249%);
 }
+----------------------*/
 /*==================================================*/
 /* === page refs====*/
 /*==================================================*/
@@ -995,6 +1012,7 @@ ul li::marker {
 }
 
 /* ==== colorful indent levels ===*/
+
 .block-children {
   border-left: 0px solid;
 }
@@ -1156,6 +1174,7 @@ ul li::marker {
 .block-children [level="40"] {
   border-left: 1px solid;
   border-left-color: #d3a628;
+}
 
 /* ==== fix spacing - TWEAK VALUES ! ===*/
 .ls-block {
