@@ -1,12 +1,15 @@
   # -*- org-confirm-babel-evaluate: nil -*-
   #+title: Logseq Wasp Theme
-  #+PROPERTY: header-args:elisp :tangle /home/santi/Projects/logseq-code/my-themes/logseq-wasp/custom.css
-* start
-#+BEGIN_SRC css 
+  #+PROPERTY: header-args:elisp :tangle ~/Projects/logseq-code/my-themes/logseq-wasp/logseq/custom.css
+* update time
+#+BEGIN_SRC elisp 
   /* ---------------
   last update
-  2021-02-20 11:47
+2021-02-20 15:58
   --------------- */
+#+END_SRC
+* start
+#+BEGIN_SRC elisp
   @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600&family=Barlow:wght@400;700;900&display=swap");
   .white-theme,
   html[data-theme="light"] {
@@ -189,7 +192,7 @@
   }
 #+END_SRC
 * fonts
-#+BEGIN_SRC css
+#+BEGIN_SRC elisp
       /*==================================================*/
       /* == fonts == */
       /*==================================================*/
@@ -203,7 +206,7 @@
       }
 #+END_SRC 
 * header
-#+BEGIN_SRC css 
+#+BEGIN_SRC elisp 
     /*==================================================*/
     /* header                                           */
     /*==================================================*/
@@ -214,7 +217,7 @@
     }
 #+END_SRC 
 * main container
-#+BEGIN_SRC css
+#+BEGIN_SRC elisp
   /*==================================================*/
   /* main container width 640 -> var(--main-container-width) */
   /*==================================================*/
@@ -228,7 +231,7 @@
   }
 #+END_SRC
 * right side bar
-#+BEGIN_SRC css
+#+BEGIN_SRC elisp
   /*==================================================*/
   /* == right sidebar == */
   /*==================================================*/
@@ -250,7 +253,7 @@
   }
 #+END_SRC
 * block margin
-#+BEGIN_SRC css
+#+BEGIN_SRC elisp
   /*==================================================*/
   /* == blocks margin and 900 px width == */
   /*==================================================*/
@@ -262,7 +265,7 @@
   }
 #+END_SRC 
 * blocks children tree line
-#+BEGIN_SRC css
+#+BEGIN_SRC elisp
   /*==================================================*/
   /* == blocks children tree line == */
   /*==================================================*/
@@ -275,7 +278,7 @@
   }
   #+END_SRC 
 * search deco
-  #+BEGIN_SRC css
+  #+BEGIN_SRC elisp
     /*==================================================*/
     /* == search deco == */
     /*==================================================*/
@@ -317,7 +320,7 @@
     }
 #+END_SRC
 * main
-#+BEGIN_SRC css
+#+BEGIN_SRC elisp
   /*==================================================*/
   /* == MAIN == */
   /*==================================================*/
@@ -344,7 +347,7 @@
 
 #+END_SRC
 * highlighted text
-#+BEGIN_SRC css
+#+BEGIN_SRC elisp
   /*==================================================*/
   /* === highlighted text (mark) ==*/
   /*==================================================*/
@@ -366,7 +369,7 @@
   }
 #+END_SRC
 * bullets 
-#+BEGIN_SRC css
+#+BEGIN_SRC elisp
   /*==================================================*/
   /* === bullets ===*/
   /*==================================================*/
@@ -382,7 +385,7 @@
   }
 #+END_SRC
 * checkboxes
-#+BEGIN_SRC css
+#+BEGIN_SRC elisp
   /*==================================================*/
   /* === checkboxes ===*/
   /*==================================================*/
@@ -400,7 +403,7 @@
   }
 #+END_SRC  
 * todo / doing marker switch
-#+BEGIN_SRC css
+#+BEGIN_SRC elisp
     /*==================================================*/
     /* === TO DO / DOING marker-switch ===*/
     /*==================================================*/
@@ -462,7 +465,7 @@
     -------------------*/
   #+END_SRC
 * code mirror code blocks
-#+BEGIN_SRC css 
+#+BEGIN_SRC elisp 
   /*==================================================*/
   /* == codemirror code blocks == */
   /*==================================================*/
@@ -630,7 +633,7 @@
 
 #+END_SRC
 * inline code
-#+BEGIN_SRC css
+#+BEGIN_SRC elisp
   /*==================================================*/
   /* == inline code == */
   /*==================================================*/
@@ -644,7 +647,7 @@
   }
 #+END_SRC
 * iframes / yt embeds
- #+BEGIN_SRC css
+ #+BEGIN_SRC elisp
    /*==================================================*/
    /* == iframes / yt embeds == */
    /*==================================================*/
@@ -654,7 +657,7 @@
 
 #+END_SRC
 * tables
- #+BEGIN_SRC css
+ #+BEGIN_SRC elisp
    /*==================================================*/
    /* == tables == */
    /*==================================================*/
@@ -672,7 +675,7 @@
 
 #+END_SRC
 * query results block
- #+BEGIN_SRC css
+ #+BEGIN_SRC elisp
    /*==================================================*/
    /* == query results block == */
    /*==================================================*/
@@ -695,7 +698,7 @@
 
 #+END_SRC
 * daily query NOW-TODO (...) exceptions
-#+BEGIN_SRC css
+#+BEGIN_SRC elisp
   /*==================================================*/
   /* == daily query NOW-TODO (...) exceptions == */
   /*==================================================*/
@@ -709,7 +712,7 @@
 
 #+END_SRC
 * journals - height more compact
-#+BEGIN_SRC css
+#+BEGIN_SRC elisp
   /*==================================================*/
   /* == journals - height more compact == */
   /*==================================================*/
@@ -751,7 +754,7 @@
   }
 #+END_SRC
 * titles headers
-#+BEGIN_SRC css
+#+BEGIN_SRC elisp
   /*==================================================*/
   /* === titles headers=== */
   /*==================================================*/
@@ -791,7 +794,7 @@
   }
 #+END_SRC
 * folding titles : bigger arrow
-#+BEGIN_SRC css
+#+BEGIN_SRC elisp
   /*==================================================*/
   /* == folding titles : bigger arrow == */
   /*==================================================*/
@@ -812,7 +815,7 @@
   }
 #+END_SRC
 * tags
-#+BEGIN_SRC css
+#+BEGIN_SRC elisp
   /*==================================================*/
   /* === tags ====*/
   /*==================================================*/
@@ -884,7 +887,7 @@
   /* 🧪⌨🎹🏛🏟❤✔☠🕸🦠👁🧠👨‍👩‍👦‍👦👹👽🛒👘🥊🥋⚽🕹🎧⚙🧱💊⚔💣📱📽📡📷📕📗📄✏🖌📝📆📅📌⏳⏰🍕🍜🚗🚅✈🌍☀🔥💧💤💥☢✴⛔❗⚠♻▶⏸🔴🔵🗨 🎲*/
 #+END_SRC
 Done
-#+BEGIN_SRC css
+#+BEGIN_SRC elisp
   /*==================================================*/
   /* === .DONE:0 ==== <!-- completed:2021-02-12T22:45:34.725Z -->*/
   /*==================================================*/
@@ -898,7 +901,7 @@ Done
 
 #+END_SRC
 * SCHEDULED / DEADLINE - Datepicker
-#+BEGIN_SRC css
+#+BEGIN_SRC elisp
   /*==================================================*/
   /* === SCHEDULED / DEADLINE - Datepicker ====*/
   /*==================================================*/
@@ -916,7 +919,7 @@ Done
   }
 #+END_SRC
 * SCHEDULED / DEADLINE - TIMESTAMPS
-#+BEGIN_SRC css
+#+BEGIN_SRC elisp
   /*==================================================*/
   /* === SCHEDULED / DEADLINE - TIMESTAMPS ====*/
   /*==================================================*/
@@ -927,7 +930,7 @@ Done
   }
 #+END_SRC
 * scrollbars
-#+BEGIN_SRC css
+#+BEGIN_SRC elisp
   /*==================================================*/
   /* === scrollbars ====*/
   /*==================================================*/
@@ -958,7 +961,7 @@ Done
   }
 #+END_SRC
 * tailwind
-#+BEGIN_SRC css
+#+BEGIN_SRC elisp
   /*==================================================*/
   /* === tailwind ====*/
   /*==================================================*/
@@ -973,7 +976,7 @@ Done
   }
 #+END_SRC
 * external links
-#+BEGIN_SRC css
+#+BEGIN_SRC elisp
   /*==================================================*/
   /* === external links ====*/
   /*==================================================*/
@@ -1003,7 +1006,7 @@ Done
   ----------------------*/
 #+END_SRC
 * page refs
-#+BEGIN_SRC css
+#+BEGIN_SRC elisp
   /*==================================================*/
   /* === page refs====*/
   /*==================================================*/
@@ -1015,7 +1018,7 @@ Done
   }
 #+END_SRC
 * block properties
-#+BEGIN_SRC css
+#+BEGIN_SRC elisp
   /*==================================================*/
   /* == block properties == */
   /*==================================================*/
@@ -1029,7 +1032,7 @@ Done
   }
 #+END_SRC
 * block ref
-#+BEGIN_SRC css
+#+BEGIN_SRC elisp
   /*==================================================*/
   /* == block ref == */
   /*==================================================*/
@@ -1049,7 +1052,7 @@ Done
   }
 #+END_SRC
 * admonition block
-#+BEGIN_SRC css
+#+BEGIN_SRC elisp
   /*==================================================*/
   /* == admonition block == */
   /*==================================================*/
@@ -1066,7 +1069,7 @@ Done
 
 #+END_SRC
 * change look of image resize handle
-#+BEGIN_SRC css
+#+BEGIN_SRC elisp
   /*==================================================*/
   /*===== change look of image resize handle =========*/
   /*==================================================*/
@@ -1093,7 +1096,7 @@ Done
   }	 */
 #+END_SRC
 * unordered lists
-#+BEGIN_SRC css
+#+BEGIN_SRC elisp
   /*==================================================*/
   /*===== unordered lists =========*/
   /*==================================================*/
@@ -1116,7 +1119,7 @@ Done
 
 #+END_SRC
 * colorful indent levels
-#+BEGIN_SRC css
+#+BEGIN_SRC elisp
   /* ==== colorful indent levels ===*/
 
   .block-children {
@@ -1284,7 +1287,7 @@ Done
 
 #+END_SRC
 * fix spacing - TWEAK VALUES!
-#+BEGIN_SRC css
+#+BEGIN_SRC elisp
   /* ==== fix spacing - TWEAK VALUES ! ===*/
   .ls-block {
     margin: -2px 0px -2px -1px !important;
@@ -1292,7 +1295,7 @@ Done
   }
  #+END_SRC
 * highlight current path by cannnibalox v0.1
- #+BEGIN_SRC css
+ #+BEGIN_SRC elisp
   /*==================================================*/
   /* === highlight current path by cannnibalox v0.1 ===*/
   /*==================================================*/

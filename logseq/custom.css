@@ -1,7 +1,8 @@
 /* ---------------
-last update
-2021-02-20 11:47
---------------- */
+  last update
+2021-02-20 15:58
+  --------------- */
+
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600&family=Barlow:wght@400;700;900&display=swap");
 .white-theme,
 html[data-theme="light"] {
@@ -182,6 +183,7 @@ html[data-theme="light"] {
 :root {
   --main-container-width: 840px;
 }
+
 /*==================================================*/
 /* == fonts == */
 /*==================================================*/
@@ -202,6 +204,7 @@ html {
   height: 2.4rem;
   background-color: var(--ls-primary-background-color);
 }
+
 /*==================================================*/
 /* main container width 640 -> var(--main-container-width) */
 /*==================================================*/
@@ -213,6 +216,7 @@ html {
 .foldable-title {
   max-width: var(--main-container-width);
 }
+
 /*==================================================*/
 /* == right sidebar == */
 /*==================================================*/
@@ -242,6 +246,7 @@ html {
   padding: 0;
   max-width: var(--main-container-width); /* wider main container */
 }
+
 /*==================================================*/
 /* == blocks children tree line == */
 /*==================================================*/
@@ -252,6 +257,7 @@ html {
   left: -5px;
   position: relative;
 }
+
 /*==================================================*/
 /* == search deco == */
 /*==================================================*/
@@ -335,6 +341,7 @@ mark {
   font-weight: 700;
   text-decoration: underline;
 }
+
 /*==================================================*/
 /* === bullets ===*/
 /*==================================================*/
@@ -348,6 +355,7 @@ mark {
   background-color: #f2f2ef00;
   border: 1px solid var(--ls-block-bullet-border-color);
 }
+
 /*==================================================*/
 /* === checkboxes ===*/
 /*==================================================*/
@@ -363,6 +371,7 @@ mark {
   border: 1px solid var(--ls-page-checkbox-border-color) !important;
   border-radius: 20%;
 }
+
 /*==================================================*/
 /* === TO DO / DOING marker-switch ===*/
 /*==================================================*/
@@ -422,6 +431,7 @@ mark {
   left: 20px;
 } 
 -------------------*/
+
 /*==================================================*/
 /* == codemirror code blocks == */
 /*==================================================*/
@@ -598,6 +608,7 @@ samp {
     monospace;
   font-variant-ligatures: normal;
 }
+
 /*==================================================*/
 /* == iframes / yt embeds == */
 /*==================================================*/
@@ -690,6 +701,7 @@ iframe {
   padding: 48px 0;
   margin: 24px 0 24px 0px;
 }
+
 /*==================================================*/
 /* === titles headers=== */
 /*==================================================*/
@@ -727,6 +739,7 @@ h1.title {
   font-size: 1.17em;
   margin: 0.8em 0 0.25rem 0;
 }
+
 /*==================================================*/
 /* == folding titles : bigger arrow == */
 /*==================================================*/
@@ -745,6 +758,7 @@ a.block-control > .h-4 {
 .initial .blocks-container.flex-1 {
   margin-left: 3px !important;
 }
+
 /*==================================================*/
 /* === tags ====*/
 /*==================================================*/
@@ -814,6 +828,7 @@ a.tag[href*="audio"]:after {
 }
 
 /* 🧪⌨🎹🏛🏟❤✔☠🕸🦠👁🧠👨‍👩‍👦‍👦👹👽🛒👘🥊🥋⚽🕹🎧⚙🧱💊⚔💣📱📽📡📷📕📗📄✏🖌📝📆📅📌⏳⏰🍕🍜🚗🚅✈🌍☀🔥💧💤💥☢✴⛔❗⚠♻▶⏸🔴🔵🗨 🎲*/
+
 /*==================================================*/
 /* === .DONE:0 ==== <!-- completed:2021-02-12T22:45:34.725Z -->*/
 /*==================================================*/
@@ -840,6 +855,7 @@ a.tag[href*="audio"]:after {
   background: var(--datepicker-available-hoverbgcolor);
   color: var(--datepicker-available-hovercolor);
 }
+
 /*==================================================*/
 /* === SCHEDULED / DEADLINE - TIMESTAMPS ====*/
 /*==================================================*/
@@ -848,6 +864,7 @@ a.tag[href*="audio"]:after {
   font-family: consolas, monospace;
   color: var(--text-accent);
 }
+
 /*==================================================*/
 /* === scrollbars ====*/
 /*==================================================*/
@@ -876,6 +893,7 @@ html:not(.is-mac) ::-webkit-scrollbar {
   outline: 0;
   cursor: auto;
 }
+
 /*==================================================*/
 /* === tailwind ====*/
 /*==================================================*/
@@ -888,6 +906,7 @@ html:not(.is-mac) ::-webkit-scrollbar {
 .h-5 {
   height: 1.5rem;
 }
+
 /*==================================================*/
 /* === external links ====*/
 /*==================================================*/
@@ -898,7 +917,6 @@ a.external-link {
   #ADDED:0 underlined external text 
    */
 }
-
 /* 
 #OFF:20 symbol for external links 
    */
@@ -916,6 +934,7 @@ a.external-link:after {
     brightness(1419%) contrast(249%);
 }
 ----------------------*/
+
 /*==================================================*/
 /* === page refs====*/
 /*==================================================*/
@@ -925,6 +944,7 @@ a.external-link:after {
 .page-reference .text-gray-500 {
   opacity: 0.6;
 }
+
 /*==================================================*/
 /* == block properties == */
 /*==================================================*/
@@ -936,6 +956,7 @@ a.external-link:after {
   font-weight: 500;
   color: var(--text-accent);
 }
+
 /*==================================================*/
 /* == block ref == */
 /*==================================================*/
@@ -953,6 +974,7 @@ a.external-link:after {
   color: var(--ls-block-ref-link-text-color);
   text-decoration: none;
 }
+
 /*==================================================*/
 /* == admonition block == */
 /*==================================================*/
@@ -979,8 +1001,8 @@ a.external-link:after {
 .resize::after {
     pointer-events: none;
     content: "⇲";
-	font-size: 14px;
-	font-family: arial;
+  font-size: 14px;
+  font-family: arial;
     position: absolute;
     height: 12px;
     width: 12px;
@@ -989,8 +1011,9 @@ a.external-link:after {
     right: 4px;
     background-color: rgb(32, 32, 32);
     color: #fff;
-	z-index:10;
+  z-index:10;
 }	 */
+
 /*==================================================*/
 /*===== unordered lists =========*/
 /*==================================================*/
@@ -1181,6 +1204,7 @@ ul li::marker {
   margin: -2px 0px -2px -1px !important;
   padding: 4px 1px !important;
 }
+
 /*==================================================*/
 /* === highlight current path by cannnibalox v0.1 ===*/
 /*==================================================*/
