@@ -1,17 +1,21 @@
 * Table Of Contents                                                     :TOC:
-  - [[#intro][intro]]
+  - [[#intro][Intro]]
   - [[#dark-mode][Dark mode]]
-- [[#screenshot][Screenshot]]
+  - [[#light-mode][Light Mode]]
   - [[#credits][Credits]]
 
-** intro
-Hey this is my first logseq theme! It's heavily based around the color scheme of my [[https://github.com/santiyounger/Wasp-Obsidian-Theme][Obsidian Theme Wasp]] 
+** Intro
+   Hey this is my first logseq theme! It's heavily based around the color scheme of my [[https://github.com/santiyounger/Wasp-Obsidian-Theme][Obsidian Theme Wasp]] 
 
 ** Dark mode
-* Screenshot
- [[file:img/dark-logseq.png]]
+   This theme was mainly made for Dark Mode. 
+ [[file:img/dark-cobra-logseq.png]]
+ 
+** Light Mode
+   However it does have a nice simple light mode too. It's not as complete as dark mode yet though
+ [[file:img/dark-cobra-logseq.png]]
 
 ** Credits
-Big shout out to [[https://github.com/cannibalox][cannibalox]] for his amazing theme [[https://github.com/cannibalox/logseq-dark-hpx][logseq-dark-hpx]] which I used as a template to create this one with his permission.
+   Big shout out to [[https://github.com/cannibalox][cannibalox]] for his amazing theme [[https://github.com/cannibalox/logseq-dark-hpx][logseq-dark-hpx]] which I used as a template to create this one with his permission.
   
   
