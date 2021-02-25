@@ -2,6 +2,10 @@
   - [[#intro][Intro]]
   - [[#dark-mode][Dark mode]]
   - [[#light-mode][Light Mode]]
+  - [[#how-to-set-up][How to set up]]
+    - [[#beginner-friendly-method][Beginner friendly method]]
+      - [[#download][Download]]
+  - [[#how-to-update-this-theme][How to update this theme]]
   - [[#credits][Credits]]
 
 ** Intro
@@ -15,7 +19,40 @@
    However it does have a nice simple light mode too. It's not as complete as dark mode yet though
  [[file:img/light-cobra-logseq.png]]
 
+ 
+** How to set up
+   If you are an advanced user you know what to do, git clone this repo and put it the ~custom.css~ in ~/logseq/custom.css~
+
+   
+*** Beginner friendly method
+ If you consider yourself a beginner, this is how to do it.
+
+**** Download
+      Download this theme by pressing the green button called ~Code~ at the top right corner.
+
+     1. Click on Download Zip
+
+     2. Once it's in your downloads folder unzip it.
+
+     3. All you'll need is the file called ~custom.css~ feel free to delete everything else /(the other files are for my own reference)/
+
+     4. Move that ~custom.css~ file to your logseq notes in the folder called ~logseq~, there will already be another empty ~custom.css~ file there. Delete that one and replace it for mine.
+
+
+  # *** Copy paste method
+  #    Click here to open the file of the theme's code 
+  #  [[file:custom.css]]
+    
+** How to update this theme
+    I will keep updating this theme over time. So I recommend you repeat the download process every now and again for updates.
+
+#+BEGIN_QUOTE
+In the future Logseq might provide a nice way to quickly update themes, but until then it's a very manual process.
+#+END_QUOTE
+
 ** Credits
+   Huge thanks to the Logseq theme for creating such an amazing piece of software. I truly think Logseq has the potential to be a perfect solution for many of us outline thinkers.
+   
    Big shout out to [[https://github.com/cannibalox][cannibalox]] for his amazing theme [[https://github.com/cannibalox/logseq-dark-hpx][logseq-dark-hpx]] which I used as a template to create this one with his permission.
   
   
