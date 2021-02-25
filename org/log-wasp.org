@@ -1,6 +1,6 @@
   # -*- org-confirm-babel-evaluate: nil -*-
   #+title: Logseq Wasp Theme
-  #+PROPERTY: header-args:elisp :tangle ~/Projects/logseq-code/my-themes/logseq-wasp/logseq/custom.css
+  #+PROPERTY: header-args:elisp :tangle ~/Dropbox/notes/obsidian/obsidian-personal/Ⓛ/logseq/custom.css 
 * update time
 #+BEGIN_SRC elisp 
   /* ---------------
