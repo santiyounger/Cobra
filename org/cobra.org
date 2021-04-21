@@ -1308,3 +1308,15 @@ Done
     background-color: var(--ls-block-bullet-color);
   }
 #+END_SRC 
+* ----------------------- additional tweaks
+ take from Piotr 
+#+BEGIN_SRC elisp   
+    /*==================================================*/
+  /* changing color of rename */
+    .fixed.bottom-0.inset-x-0.px-4.pb-4 > div:first-child > div {
+       background: rgba(0 0 0 / 70%);
+    }
+    .fixed.bottom-0.inset-x-0.px-4.pb-4 > div:last-child {
+        filter: invert(.9);
+    }
+ #+END_SRC
