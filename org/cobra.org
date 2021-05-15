@@ -1,15 +1,15 @@
   # -*- org-confirm-babel-evaluate: nil -*-
   #+title: Logseq Wasp Theme
-  #+PROPERTY: header-args:elisp :tangle ~/Dropbox/notes/obsidian/obsidian-personal/Ⓛ/logseq/custom.css 
+  #+PROPERTY: header-args:css :tangle ~/Dropbox/notes/obsidian/obsidian-personal/Ⓛ/logseq/custom.css 
 * update time
-#+BEGIN_SRC elisp 
+#+BEGIN_SRC css 
   /* ---------------
   last update
 2021-02-20 15:58
   --------------- */
 #+END_SRC
 * start
-#+BEGIN_SRC elisp
+#+BEGIN_SRC css
   @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600&family=Barlow:wght@400;700;900&display=swap");
   .white-theme,
   html[data-theme="light"] {
@@ -192,7 +192,7 @@
   }
 #+END_SRC
 * fonts
-#+BEGIN_SRC elisp
+#+BEGIN_SRC css
       /*==================================================*/
       /* == fonts == */
       /*==================================================*/
@@ -206,7 +206,7 @@
       }
 #+END_SRC 
 * header
-#+BEGIN_SRC elisp 
+#+BEGIN_SRC css 
     /*==================================================*/
     /* header                                           */
     /*==================================================*/
@@ -217,7 +217,7 @@
     }
 #+END_SRC 
 * main container
-#+BEGIN_SRC elisp
+#+BEGIN_SRC css
   /*==================================================*/
   /* main container width 640 -> var(--main-container-width) */
   /*==================================================*/
@@ -231,7 +231,7 @@
   }
 #+END_SRC
 * right side bar
-#+BEGIN_SRC elisp
+#+BEGIN_SRC css
   /*==================================================*/
   /* == right sidebar == */
   /*==================================================*/
@@ -253,7 +253,7 @@
   }
 #+END_SRC
 * block margin
-#+BEGIN_SRC elisp
+#+BEGIN_SRC css
   /*==================================================*/
   /* == blocks margin and 900 px width == */
   /*==================================================*/
@@ -265,20 +265,22 @@
   }
 #+END_SRC 
 * blocks children tree line
-#+BEGIN_SRC elisp
+#+BEGIN_SRC css
   /*==================================================*/
   /* == blocks children tree line == */
   /*==================================================*/
 
-  .block-children {
-    border-left: 1px solid;
-    border-left-color: var(--ls-guideline-color, #ddd);
-    left: -5px;
-    position: relative;
-  }
+/* not working */
+  /* .block-children { */
+  /*   border-left: 1px solid; */
+  /*   border-left-color: var(--ls-guideline-color, #ddd); */
+  /*   /\* border-left-color: #ff0000; *\/ */
+  /*   left: -5px; */
+  /*   position: relative; */
+  /* } */
   #+END_SRC 
 * search deco
-  #+BEGIN_SRC elisp
+  #+BEGIN_SRC css
     /*==================================================*/
     /* == search deco == */
     /*==================================================*/
@@ -320,7 +322,7 @@
     }
 #+END_SRC
 * main
-#+BEGIN_SRC elisp
+#+BEGIN_SRC css
   /*==================================================*/
   /* == MAIN == */
   /*==================================================*/
@@ -347,7 +349,7 @@
 
 #+END_SRC
 * highlighted text
-#+BEGIN_SRC elisp
+#+BEGIN_SRC css
   /*==================================================*/
   /* === highlighted text (mark) ==*/
   /*==================================================*/
@@ -369,7 +371,7 @@
   }
 #+END_SRC
 * bullets 
-#+BEGIN_SRC elisp
+#+BEGIN_SRC css
   /*==================================================*/
   /* === bullets ===*/
   /*==================================================*/
@@ -385,7 +387,7 @@
   }
 #+END_SRC
 * checkboxes
-#+BEGIN_SRC elisp
+#+BEGIN_SRC css
   /*==================================================*/
   /* === checkboxes ===*/
   /*==================================================*/
@@ -403,7 +405,7 @@
   }
 #+END_SRC  
 * todo / doing marker switch
-#+BEGIN_SRC elisp
+#+BEGIN_SRC css
     /*==================================================*/
     /* === TO DO / DOING marker-switch ===*/
     /*==================================================*/
@@ -465,7 +467,7 @@
     -------------------*/
   #+END_SRC
 * code mirror code blocks
-#+BEGIN_SRC elisp 
+#+BEGIN_SRC css 
   /*==================================================*/
   /* == codemirror code blocks == */
   /*==================================================*/
@@ -633,7 +635,7 @@
 
 #+END_SRC
 * inline code
-#+BEGIN_SRC elisp
+#+BEGIN_SRC css
   /*==================================================*/
   /* == inline code == */
   /*==================================================*/
@@ -647,7 +649,7 @@
   }
 #+END_SRC
 * iframes / yt embeds
- #+BEGIN_SRC elisp
+ #+BEGIN_SRC css
    /*==================================================*/
    /* == iframes / yt embeds == */
    /*==================================================*/
@@ -657,7 +659,7 @@
 
 #+END_SRC
 * tables
- #+BEGIN_SRC elisp
+ #+BEGIN_SRC css
    /*==================================================*/
    /* == tables == */
    /*==================================================*/
@@ -675,7 +677,7 @@
 
 #+END_SRC
 * query results block
- #+BEGIN_SRC elisp
+ #+BEGIN_SRC css
    /*==================================================*/
    /* == query results block == */
    /*==================================================*/
@@ -698,7 +700,7 @@
 
 #+END_SRC
 * daily query NOW-TODO (...) exceptions
-#+BEGIN_SRC elisp
+#+BEGIN_SRC css
   /*==================================================*/
   /* == daily query NOW-TODO (...) exceptions == */
   /*==================================================*/
@@ -712,7 +714,7 @@
 
 #+END_SRC
 * journals - height more compact
-#+BEGIN_SRC elisp
+#+BEGIN_SRC css
   /*==================================================*/
   /* == journals - height more compact == */
   /*==================================================*/
@@ -754,7 +756,7 @@
   }
 #+END_SRC
 * titles headers
-#+BEGIN_SRC elisp
+#+BEGIN_SRC css
   /*==================================================*/
   /* === titles headers=== */
   /*==================================================*/
@@ -794,7 +796,7 @@
   }
 #+END_SRC
 * folding titles : bigger arrow
-#+BEGIN_SRC elisp
+#+BEGIN_SRC css
   /*==================================================*/
   /* == folding titles : bigger arrow == */
   /*==================================================*/
@@ -815,7 +817,7 @@
   }
 #+END_SRC
 * tags
-#+BEGIN_SRC elisp
+#+BEGIN_SRC css
   /*==================================================*/
   /* === tags ====*/
   /*==================================================*/
@@ -887,7 +889,7 @@
   /* 🧪⌨🎹🏛🏟❤✔☠🕸🦠👁🧠👨‍👩‍👦‍👦👹👽🛒👘🥊🥋⚽🕹🎧⚙🧱💊⚔💣📱📽📡📷📕📗📄✏🖌📝📆📅📌⏳⏰🍕🍜🚗🚅✈🌍☀🔥💧💤💥☢✴⛔❗⚠♻▶⏸🔴🔵🗨 🎲*/
 #+END_SRC
 Done
-#+BEGIN_SRC elisp
+#+BEGIN_SRC css
   /*==================================================*/
   /* === .DONE:0 ==== <!-- completed:2021-02-12T22:45:34.725Z -->*/
   /*==================================================*/
@@ -901,7 +903,7 @@ Done
 
 #+END_SRC
 * SCHEDULED / DEADLINE - Datepicker
-#+BEGIN_SRC elisp
+#+BEGIN_SRC css
   /*==================================================*/
   /* === SCHEDULED / DEADLINE - Datepicker ====*/
   /*==================================================*/
@@ -919,7 +921,7 @@ Done
   }
 #+END_SRC
 * SCHEDULED / DEADLINE - TIMESTAMPS
-#+BEGIN_SRC elisp
+#+BEGIN_SRC css
   /*==================================================*/
   /* === SCHEDULED / DEADLINE - TIMESTAMPS ====*/
   /*==================================================*/
@@ -930,7 +932,7 @@ Done
   }
 #+END_SRC
 * scrollbars
-#+BEGIN_SRC elisp
+#+BEGIN_SRC css
   /*==================================================*/
   /* === scrollbars ====*/
   /*==================================================*/
@@ -961,7 +963,7 @@ Done
   }
 #+END_SRC
 * tailwind
-#+BEGIN_SRC elisp
+#+BEGIN_SRC css
   /*==================================================*/
   /* === tailwind ====*/
   /*==================================================*/
@@ -976,7 +978,7 @@ Done
   }
 #+END_SRC
 * external links
-#+BEGIN_SRC elisp
+#+BEGIN_SRC css
   /*==================================================*/
   /* === external links ====*/
   /*==================================================*/
@@ -1006,7 +1008,7 @@ Done
   ----------------------*/
 #+END_SRC
 * page refs
-#+BEGIN_SRC elisp
+#+BEGIN_SRC css
   /*==================================================*/
   /* === page refs====*/
   /*==================================================*/
@@ -1018,7 +1020,7 @@ Done
   }
 #+END_SRC
 * block properties
-#+BEGIN_SRC elisp
+#+BEGIN_SRC css
   /*==================================================*/
   /* == block properties == */
   /*==================================================*/
@@ -1032,7 +1034,7 @@ Done
   }
 #+END_SRC
 * block ref
-#+BEGIN_SRC elisp
+#+BEGIN_SRC css
   /*==================================================*/
   /* == block ref == */
   /*==================================================*/
@@ -1052,7 +1054,7 @@ Done
   }
 #+END_SRC
 * admonition block
-#+BEGIN_SRC elisp
+#+BEGIN_SRC css
   /*==================================================*/
   /* == admonition block == */
   /*==================================================*/
@@ -1069,7 +1071,7 @@ Done
 
 #+END_SRC
 * change look of image resize handle
-#+BEGIN_SRC elisp
+#+BEGIN_SRC css
   /*==================================================*/
   /*===== change look of image resize handle =========*/
   /*==================================================*/
@@ -1096,7 +1098,7 @@ Done
   }	 */
 #+END_SRC
 * unordered lists
-#+BEGIN_SRC elisp
+#+BEGIN_SRC css
   /*==================================================*/
   /*===== unordered lists =========*/
   /*==================================================*/
@@ -1119,7 +1121,7 @@ Done
 
 #+END_SRC
 * colorful indent levels
-#+BEGIN_SRC elisp
+#+BEGIN_SRC css
   /* ==== colorful indent levels ===*/
 
   .block-children {
@@ -1287,7 +1289,7 @@ Done
 
 #+END_SRC
 * fix spacing - TWEAK VALUES!
-#+BEGIN_SRC elisp
+#+BEGIN_SRC css
   /* ==== fix spacing - TWEAK VALUES ! ===*/
   .ls-block {
     margin: -2px 0px -2px -1px !important;
@@ -1295,7 +1297,7 @@ Done
   }
  #+END_SRC
 * highlight current path by cannnibalox v0.1
- #+BEGIN_SRC elisp
+ #+BEGIN_SRC css
   /*==================================================*/
   /* === highlight current path by cannnibalox v0.1 ===*/
   /*==================================================*/
@@ -1310,7 +1312,7 @@ Done
 #+END_SRC 
 * ----------------------- additional tweaks
  take from Piotr 
-#+BEGIN_SRC elisp   
+#+BEGIN_SRC css   
     /*==================================================*/
   /* changing color of rename */
     .fixed.bottom-0.inset-x-0.px-4.pb-4 > div:first-child > div {
