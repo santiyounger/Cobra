@@ -11,7 +11,9 @@
  [[file:icon.png]]
 
 ** Intro
-   Hey this is my first logseq theme! It's heavily based around the color scheme of my [[https://github.com/santiyounger/Wasp-Obsidian-Theme][Obsidian Theme Wasp]] 
+   Hey this is my first logseq theme!
+
+It's heavily based on my Obsidian Theme: [[https://github.com/santiyounger/Wasp-Obsidian-Theme][Wasp]]
 
 ** Dark mode
    This theme was mainly made for Dark Mode. 
