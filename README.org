@@ -8,9 +8,8 @@
   - [[#credits][Credits]]
 
 ** Logseq Theme: Cobra
-#+BEGIN_center
+#+ATTR_HTML: :style margin-left: auto; margin-right: auto;
  [[file:img/cobra-logo.png]]
-#+END_center
 
 ** Intro
    Hey this is my first logseq theme!
