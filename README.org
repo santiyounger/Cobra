@@ -1,5 +1,5 @@
 * Table Of Contents                                                     :TOC:
-  - [[#logo][logo]]
+  - [[#logseq-theme-cobra][Logseq Theme: Cobra]]
   - [[#intro][Intro]]
   - [[#dark-mode][Dark mode]]
   - [[#light-mode][Light Mode]]
@@ -7,7 +7,7 @@
   - [[#how-to-update-this-theme][How to update this theme]]
   - [[#credits][Credits]]
 
-** logo
+** Logseq Theme: Cobra
  [[file:icon.png]]
 
 ** Intro
