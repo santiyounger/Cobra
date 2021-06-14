@@ -1,12 +1,14 @@
 * Table Of Contents                                                     :TOC:
+  - [[#logo][logo]]
   - [[#intro][Intro]]
   - [[#dark-mode][Dark mode]]
   - [[#light-mode][Light Mode]]
   - [[#how-to-set-up][How to set up]]
-    - [[#beginner-friendly-method][Beginner friendly method]]
-      - [[#download][Download]]
   - [[#how-to-update-this-theme][How to update this theme]]
   - [[#credits][Credits]]
+
+** logo
+ [[file:icon.png]]
 
 ** Intro
    Hey this is my first logseq theme! It's heavily based around the color scheme of my [[https://github.com/santiyounger/Wasp-Obsidian-Theme][Obsidian Theme Wasp]] 
