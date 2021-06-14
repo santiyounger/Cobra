@@ -8,7 +8,7 @@
   - [[#credits][Credits]]
 
 ** Logseq Theme: Cobra
- [[file:icon.png]]
+ [[file:img/cobra-logo.png]]
 
 ** Intro
    Hey this is my first logseq theme!
