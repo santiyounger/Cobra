@@ -8,7 +8,10 @@
   - [[#credits][Credits]]
 
 ** Logseq Theme: Cobra
+#+BEGIN_center
+#+ATTR_LaTeX: :height 0.2\textwidth
  [[file:img/cobra-logo.png]]
+#+END_center
 
 ** Intro
    Hey this is my first logseq theme!
