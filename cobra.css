@@ -1,17 +1,8 @@
-  # -*- org-confirm-babel-evaluate: nil -*-
-  #+title: Logseq Wasp Theme
-  #+PROPERTY: header-args:css :tangle ~/Dropbox/notes/obsidian/obsidian-personal/Ⓛ/logseq/custom.css 
-  
-* stable test
-** update time
-   #+BEGIN_SRC css 
-     /* ---------------
-       last update
-2021-05-19 22:25
+/* ---------------
+       last update 
+2021-05-19 22:25   
        --------------- */
-   #+END_SRC
-** start
-   #+BEGIN_SRC css
+
      @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600&family=Barlow:wght@400;700;900&display=swap");
      .white-theme,
      html[data-theme="light"] {
@@ -20,17 +11,17 @@
          --ls-tertiary-background-color: #fff;
          /* 
      #CHANGED:60 light mode division line it used to be green
-        ,*/
+        */
          --ls-quaternary-background-color: #e1f0fe;
          --ls-table-tr-even-background-color: #f4f5f7;
          --ls-active-primary-color: #d49233;
          /* 
      #CHANGED:70 light mode: main color for internal links
-        ,*/
+        */
          --ls-active-secondary-color: #a56b16;
          /* 
      #CHANGED:80 light: hover color
-        ,*/
+        */
          --ls-block-properties-background-color: var(--ls-tertiary-background-color);
          --ls-search-background-color: var(--ls-primary-background-color);
          --ls-border-color: #ccc;
@@ -78,7 +69,7 @@
          --ls-primary-background-color: #242424;
          /* 
      #CHANGED:0 background color 
-        ,*/
+        */
          --ls-secondary-background-color: rgb(22, 22, 22);
          --ls-tertiary-background-color: rgb(38, 39, 41);
          --ls-block-properties-background-color: #111415c2;
@@ -88,24 +79,24 @@
          --ls-primary-text-color: #faf2d6;
          /* 
      #CHANGED:100 main text color
-        ,*/
+        */
          --ls-secondary-text-color: #c7c7c7;
          --ls-title-text-color: #d3a628;
          /* 
      #CHANGED:110 page text title color 
-        ,*/
+        */
          --ls-link-text-color: #d3a628;
          /*
      #CHANGED:140 text color 
-        ,*/
+        */
          --ls-link-text-hover-color: #e6992a;
          /*  
      #CHANGED:40 hover over links
-        ,*/
+        */
          --ls-link-ref-text-color: #d3a628;
          /* 
        #CHANGED:130 text [[link]]  color
-        ,*/
+        */
          --ls-link-ref-text-hover-color: var(--ls-link-text-hover-color);
          --ls-tag-text-color: var(--ls-link-text-color);
          --ls-tag-text-hover-color: var(--ls-link-text-hover-color);
@@ -113,7 +104,7 @@
          --ls-block-bullet-color: #d3a628;
          /*  
        #CHANGED:30 bullet outline dot color
-        ,*/
+        */
          --ls-block-highlight-color: #202e3a;
          --ls-page-checkbox-color: #4e7c9a;
          --ls-page-checkbox-border-color: #477ba8;
@@ -123,7 +114,7 @@
          --ls-page-inline-code-color: #fff;
          /* 
      #CHANGED:50 inline code
-        ,*/
+        */
          --ls-page-inline-code-bg-color: #575757;
          --ls-page-title-size: 28px;
          --ls-scrollbar-color: #000;
@@ -133,11 +124,11 @@
          --ls-icon-color: #d3a628;
          /*
        #CHANGED:90 logo, back arrows 
-        ,*/
+        */
          --ls-search-icon-color: #d3a628;
          /* 
        #CHANGED:120 search bar 
-        ,*/
+        */
          --ls-a-chosen-bg: #172a36;
          --ls-right-sidebar-code-bg-color: #04303c;
          --ls-active-primary-color: #37638a;
@@ -151,7 +142,7 @@
          --marker-switch-color: #d3a628;
          /* 
      #CHANGED:0 TODO LATER COLOR 
-        ,*/
+        */
          --marker-switch-opa: 0.7;
          --datepicker-active-bgcolor: #650707;
          --datepicker-active-bordercolor: #fff;
@@ -162,7 +153,7 @@
          --text-accent: #c8b16f;
          /* 
        #CHANGED:30 file path text, and external links 
-        ,*/
+        */
          --text-hightlight: #d3a628;
          --inverted-text: #262626;
          --highlight-light: #0b0a0bf0;
@@ -192,9 +183,7 @@
      :root {
          --main-container-width: 840px;
      }
-   #+END_SRC
-** fonts
-   #+BEGIN_SRC css
+
      /*==================================================*/
      /* == fonts == */
      /*==================================================*/
@@ -204,11 +193,9 @@
          serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol !important; */
          /* 
        #OFF:10 font html off 
-        ,*/
+        */
      }
-   #+END_SRC 
-** header
-   #+BEGIN_SRC css 
+
      /*==================================================*/
      /* header                                           */
      /*==================================================*/
@@ -217,9 +204,7 @@
          height: 2.4rem;
          background-color: var(--ls-primary-background-color);
      }
-   #+END_SRC 
-** main container
-   #+BEGIN_SRC css
+
      /*==================================================*/
      /* main container width 640 -> var(--main-container-width) */
      /*==================================================*/
@@ -231,10 +216,7 @@
      .foldable-title {
          max-width: var(--main-container-width);
      }
-   #+END_SRC
 
-** block margin
- #+BEGIN_SRC css
    /*==================================================*/
    /* == blocks margin and 900 px width == */
    /*==================================================*/
@@ -244,9 +226,7 @@
      padding: 0;
      max-width: var(--main-container-width); /* wider main container */
    }
- #+END_SRC 
-** blocks children tree line
- #+BEGIN_SRC css
+
    /*==================================================*/
    /* == blocks children tree line == */
    /*==================================================*/
@@ -259,9 +239,7 @@
    /*   left: -5px; */
    /*   position: relative; */
    /* } */
-   #+END_SRC 
-** search deco
-   #+BEGIN_SRC css
+
      /*==================================================*/
      /* == search deco == */
      /*==================================================*/
@@ -285,7 +263,7 @@
                border-top: 40px solid #000;
                border-left: 60px solid #000;
          }
-         ,*/
+         */
      /*==================================================*/
      /* == search == */
      /*==================================================*/
@@ -301,9 +279,7 @@
        box-shadow: 0 10px 15px -3px rgb(0 0 0 / 35%),
          0 4px 6px -2px rgba(0, 0, 0, 0.05);
      }
- #+END_SRC
-** main
- #+BEGIN_SRC css
+
    /*==================================================*/
    /* == MAIN == */
    /*==================================================*/
@@ -328,9 +304,6 @@
      background-color: var(--ls-secondary-background-color);
    }
 
- #+END_SRC
-** highlighted text
- #+BEGIN_SRC css
    /*==================================================*/
    /* === highlighted text (mark) ==*/
    /*==================================================*/
@@ -350,9 +323,7 @@
      font-weight: 700;
      text-decoration: underline;
    }
- #+END_SRC
-** bullets 
- #+BEGIN_SRC css
+
    /*==================================================*/
    /* === bullets ===*/
    /*==================================================*/
@@ -366,9 +337,7 @@
      background-color: #f2f2ef00;
      border: 1px solid var(--ls-block-bullet-border-color);
    }
- #+END_SRC
-** checkboxes
- #+BEGIN_SRC css
+
    /*==================================================*/
    /* === checkboxes ===*/
    /*==================================================*/
@@ -384,9 +353,7 @@
      border: 1px solid var(--ls-page-checkbox-border-color) !important;
      border-radius: 20%;
    }
- #+END_SRC  
-** todo / doing marker switch
- #+BEGIN_SRC css
+
      /*==================================================*/
      /* === TO DO / DOING marker-switch ===*/
      /*==================================================*/
@@ -406,7 +373,7 @@
 
      /* 
      #OFF:0 removed changes to TODO, marging and emoji
-      ,*/
+      */
      /*--------------------
      [title="Change from .TODO to DOING"] {
        background-color: var(--marker-switch-bgcolor);
@@ -427,7 +394,7 @@
      ---------------------*/
      /* 
      #OFF:5 removed changes to DOING, marging and emoji
-      ,*/
+      */
      /*--------------------
      [title="Change from  .DOING to TODO"] {
        color: var(--text-accent);
@@ -446,9 +413,7 @@
        left: 20px;
      } 
      -------------------*/
-   #+END_SRC
-** code mirror code blocks
- #+BEGIN_SRC css 
+
    /*==================================================*/
    /* == codemirror code blocks == */
    /*==================================================*/
@@ -456,7 +421,7 @@
      /* font-family: Fira Code, Consolas, monospace; */
      /* 
      #OFF:15 desactivated font 
-     ,*/
+     */
      font-size: 12px;
      color: #efefef;
    }
@@ -614,9 +579,6 @@
 
    /*=====*/
 
- #+END_SRC
-** inline code
- #+BEGIN_SRC css
    /*==================================================*/
    /* == inline code == */
    /*==================================================*/
@@ -628,9 +590,7 @@
        monospace;
      font-variant-ligatures: normal;
    }
- #+END_SRC
-** iframes / yt embeds
-  #+BEGIN_SRC css
+
     /*==================================================*/
     /* == iframes / yt embeds == */
     /*==================================================*/
@@ -638,9 +598,6 @@
       width: 100%;
     }
 
- #+END_SRC
-** tables
-  #+BEGIN_SRC css
     /*==================================================*/
     /* == tables == */
     /*==================================================*/
@@ -656,9 +613,6 @@
       border-bottom: 1px solid var(--ls-border-color);
     }
 
- #+END_SRC
-** query results block
-  #+BEGIN_SRC css
     /*==================================================*/
     /* == query results block == */
     /*==================================================*/
@@ -679,9 +633,6 @@
       opacity: 1;
     }
 
- #+END_SRC
-** daily query NOW-TODO (...) exceptions
- #+BEGIN_SRC css
    /*==================================================*/
    /* == daily query NOW-TODO (...) exceptions == */
    /*==================================================*/
@@ -693,9 +644,6 @@
      content: "";
    }
 
- #+END_SRC
-** journals - height more compact
- #+BEGIN_SRC css
    /*==================================================*/
    /* == journals - height more compact == */
    /*==================================================*/
@@ -721,7 +669,7 @@
    }
    /* 
    #OFF:0 daily journal emoji
-    ,*/
+    */
    /*---------------------
    #journals .title h1:before {
      content: "📅 ";
@@ -735,9 +683,7 @@
      padding: 48px 0;
      margin: 24px 0 24px 0px;
    }
- #+END_SRC
-** titles headers
- #+BEGIN_SRC css
+
    /*==================================================*/
    /* === titles headers=== */
    /*==================================================*/
@@ -775,9 +721,7 @@
      font-size: 1.17em;
      margin: 0.8em 0 0.25rem 0;
    }
- #+END_SRC
-** folding titles : bigger arrow
- #+BEGIN_SRC css
+
    /*==================================================*/
    /* == folding titles : bigger arrow == */
    /*==================================================*/
@@ -796,9 +740,7 @@
    .initial .blocks-container.flex-1 {
      margin-left: 3px !important;
    }
- #+END_SRC
-** tags
- #+BEGIN_SRC css
+
    /*==================================================*/
    /* === tags ====*/
    /*==================================================*/
@@ -868,9 +810,7 @@
    }
 
    /* 🧪⌨🎹🏛🏟❤✔☠🕸🦠👁🧠👨‍👩‍👦‍👦👹👽🛒👘🥊🥋⚽🕹🎧⚙🧱💊⚔💣📱📽📡📷📕📗📄✏🖌📝📆📅📌⏳⏰🍕🍜🚗🚅✈🌍☀🔥💧💤💥☢✴⛔❗⚠♻▶⏸🔴🔵🗨 🎲*/
- #+END_SRC
- Done
- #+BEGIN_SRC css
+
    /*==================================================*/
    /* === .DONE:0 ==== <!-- completed:2021-02-12T22:45:34.725Z -->*/
    /*==================================================*/
@@ -878,13 +818,10 @@
      text-decoration: line-through #242424;
      /* 
    #CHANGED:0 lowered opacity for done tasks
-    ,*/
+    */
      opacity: 0.7;
    }
 
- #+END_SRC
-** SCHEDULED / DEADLINE - Datepicker
- #+BEGIN_SRC css
    /*==================================================*/
    /* === SCHEDULED / DEADLINE - Datepicker ====*/
    /*==================================================*/
@@ -900,9 +837,7 @@
      background: var(--datepicker-available-hoverbgcolor);
      color: var(--datepicker-available-hovercolor);
    }
- #+END_SRC
-** SCHEDULED / DEADLINE - TIMESTAMPS
- #+BEGIN_SRC css
+
    /*==================================================*/
    /* === SCHEDULED / DEADLINE - TIMESTAMPS ====*/
    /*==================================================*/
@@ -911,9 +846,7 @@
      font-family: consolas, monospace;
      color: var(--text-accent);
    }
- #+END_SRC
-** scrollbars
- #+BEGIN_SRC css
+
    /*==================================================*/
    /* === scrollbars ====*/
    /*==================================================*/
@@ -942,9 +875,7 @@
      outline: 0;
      cursor: auto;
    }
- #+END_SRC
-** tailwind
- #+BEGIN_SRC css
+
    /*==================================================*/
    /* === tailwind ====*/
    /*==================================================*/
@@ -957,9 +888,7 @@
    .h-5 {
      height: 1.5rem;
    }
- #+END_SRC
-** external links
- #+BEGIN_SRC css
+
    /*==================================================*/
    /* === external links ====*/
    /*==================================================*/
@@ -968,11 +897,11 @@
      text-decoration: underline;
      /* 
      #ADDED:0 underlined external text 
-      ,*/
+      */
    }
    /* 
    #OFF:20 symbol for external links 
-      ,*/
+      */
    /*---------------------
    a.external-link:after {
      display: inline-block;
@@ -987,9 +916,7 @@
        brightness(1419%) contrast(249%);
    }
    ----------------------*/
- #+END_SRC
-** page refs
- #+BEGIN_SRC css
+
    /*==================================================*/
    /* === page refs====*/
    /*==================================================*/
@@ -999,9 +926,7 @@
    .page-reference .text-gray-500 {
      opacity: 0.6;
    }
- #+END_SRC
-** block properties
- #+BEGIN_SRC css
+
    /*==================================================*/
    /* == block properties == */
    /*==================================================*/
@@ -1013,9 +938,7 @@
      font-weight: 500;
      color: var(--text-accent);
    }
- #+END_SRC
-** block ref
- #+BEGIN_SRC css
+
    /*==================================================*/
    /* == block ref == */
    /*==================================================*/
@@ -1033,9 +956,7 @@
      color: var(--ls-block-ref-link-text-color);
      text-decoration: none;
    }
- #+END_SRC
-** admonition block
- #+BEGIN_SRC css
+
    /*==================================================*/
    /* == admonition block == */
    /*==================================================*/
@@ -1050,9 +971,6 @@
      color: var(--admo-text-important);
    }
 
- #+END_SRC
-** change look of image resize handle
- #+BEGIN_SRC css
    /*==================================================*/
    /*===== change look of image resize handle =========*/
    /*==================================================*/
@@ -1077,9 +995,7 @@
        color: #fff;
      z-index:10;
    }	 */
- #+END_SRC
-** unordered lists
- #+BEGIN_SRC css
+
    /*==================================================*/
    /*===== unordered lists =========*/
    /*==================================================*/
@@ -1100,17 +1016,12 @@
      margin: 20px 0px 20px 20px;
    }
 
- #+END_SRC
-** fix spacing - TWEAK VALUES!
- #+BEGIN_SRC css
    /* ==== fix spacing - TWEAK VALUES ! ===*/
    .ls-block {
      margin: -2px 0px -2px -1px !important;
      padding: 4px 1px !important;
    }
-  #+END_SRC
-** highlight current path by cannnibalox v0.1
-  #+BEGIN_SRC css
+
    /*==================================================*/
    /* === highlight current path by cannnibalox v0.1 ===*/
    /*==================================================*/
@@ -1122,10 +1033,7 @@
    .ls-block:not(:focus-within) > div:first-child .bullet {
      background-color: var(--ls-block-bullet-color);
    }
- #+END_SRC 
-** ----------------------- additional tweaks
-  take from Piotr 
- #+BEGIN_SRC css   
+
      /*==================================================*/
    /* changing color of rename */
      .fixed.bottom-0.inset-x-0.px-4.pb-4 > div:first-child > div {
@@ -1134,10 +1042,7 @@
      .fixed.bottom-0.inset-x-0.px-4.pb-4 > div:last-child {
          filter: invert(.9);
      }
-  #+END_SRC
-* experimental
-** colorful indent levels
- #+BEGIN_SRC css
+
    /* ==== colorful indent levels ===*/
 .block-children {
      border-left: 1px solid;
@@ -1301,30 +1206,3 @@
      border-left: 1px solid;
      border-left-color: #d3a628;
    }
-
- #+END_SRC
-* desactivated with (elisp instead of css)
-** depricated
-*** right side bar
-this no longer works like it used to, it actually breaks things. The right sidebar overlaps and makes things look strange
- #+BEGIN_SRC elisp
-   /*==================================================*/
-   /* == right sidebar == */
-   /*==================================================*/
-   .cp__right-sidebar {
-     position: fixed;
-     top: 3rem;
-     right: 0;
-     width: 0;
-     opacity: 0.5;
-     height: 102vh; /*calc(100vh - 3rem);*/
-     overflow-x: hidden;
-     overflow-y: auto;
-     z-index: 9;
-     transition: width 0.3s, opacity 0.2s;
-     border-radius: var(--ls-border-radius-low) 0 0 0;
-     box-sizing: border-box;
-     background-color: var(--ls-secondary-background-color, #d8e1e8);
-     padding-bottom: 48px;
-   }
- #+END_SRC
