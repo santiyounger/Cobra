@@ -1,14 +1,14 @@
   # -*- org-confirm-babel-evaluate: nil -*-
   #+title: Logseq Wasp Theme
-  #+PROPERTY: header-args:css :tangle /home/santi/Dropbox/notes/obsidian/obsidian-personal/Ⓛ/logseq/themes/logseq-cobra/cobra.css
+  #+PROPERTY: header-args:css :tangle   /home/santi/Projects/logseq/Cobra/cobra.css
   
 * stable test
 ** update time and notes
- I accidentely did a lot of undo redo and I'm not sure if I lost anything, I should have backups in git if needed
+ I accidentally did a lot of undo redo and I'm not sure if I lost anything, I should have backups in git if needed
    #+BEGIN_SRC css 
      /* ---------------
        last update
-     2021-06-17 17:01
+2021-06-17 17:21
        --------------- */
    #+END_SRC
 ** start
