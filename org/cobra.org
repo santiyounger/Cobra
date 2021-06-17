@@ -1,13 +1,14 @@
   # -*- org-confirm-babel-evaluate: nil -*-
   #+title: Logseq Wasp Theme
-  #+PROPERTY: header-args:css :tangle ~/Dropbox/notes/obsidian/obsidian-personal/Ⓛ/logseq/custom.css 
+  #+PROPERTY: header-args:css :tangle /home/santi/Dropbox/notes/obsidian/obsidian-personal/Ⓛ/logseq/themes/logseq-cobra/cobra.css
   
 * stable test
-** update time
+** update time and notes
+ I accidentely did a lot of undo redo and I'm not sure if I lost anything, I should have backups in git if needed
    #+BEGIN_SRC css 
      /* ---------------
        last update
-2021-05-19 22:25
+     2021-06-17 17:01
        --------------- */
    #+END_SRC
 ** start
@@ -233,6 +234,28 @@
      }
    #+END_SRC
 
+** right side bar
+ #+BEGIN_SRC csr
+   /*==================================================*/
+   /* == right sidebar == */
+   /*==================================================*/
+   .cp__right-sidebar {
+     position: fixed;
+     top: 3rem;
+     right: 0;
+     width: 0;
+     opacity: 0.5;
+     height: 102vh; /*calc(100vh - 3rem);*/
+     overflow-x: hidden;
+     overflow-y: auto;
+     z-index: 9;
+     transition: width 0.3s, opacity 0.2s;
+     border-radius: var(--ls-border-radius-low) 0 0 0;
+     box-sizing: border-box;
+     background-color: var(--ls-secondary-background-color, #d8e1e8);
+     padding-bottom: 48px;
+   }
+ #+END_SRC
 ** block margin
  #+BEGIN_SRC css
    /*==================================================*/
@@ -356,10 +379,11 @@
    /*==================================================*/
    /* === bullets ===*/
    /*==================================================*/
+/* SY this might be causing conflicts making the bullets miss align */
    .bullet-container .bullet {
-     border-radius: 50%;
-     width: 5px;
-     height: 5px;
+     /* border-radius: 50%; */
+     /* width: 5px; */
+     /* height: 5px; */
      background-color: var(--ls-block-bullet-color);
    }
    .bullet-container.bullet-closed {
@@ -1302,29 +1326,4 @@
      border-left-color: #d3a628;
    }
 
- #+END_SRC
-* desactivated with (elisp instead of css)
-** depricated
-*** right side bar
-this no longer works like it used to, it actually breaks things. The right sidebar overlaps and makes things look strange
- #+BEGIN_SRC elisp
-   /*==================================================*/
-   /* == right sidebar == */
-   /*==================================================*/
-   .cp__right-sidebar {
-     position: fixed;
-     top: 3rem;
-     right: 0;
-     width: 0;
-     opacity: 0.5;
-     height: 102vh; /*calc(100vh - 3rem);*/
-     overflow-x: hidden;
-     overflow-y: auto;
-     z-index: 9;
-     transition: width 0.3s, opacity 0.2s;
-     border-radius: var(--ls-border-radius-low) 0 0 0;
-     box-sizing: border-box;
-     background-color: var(--ls-secondary-background-color, #d8e1e8);
-     padding-bottom: 48px;
-   }
  #+END_SRC

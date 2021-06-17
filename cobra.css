@@ -1,6 +1,6 @@
-/* ---------------
-       last update 
-2021-05-19 22:25   
+     /* ---------------
+       last update
+     2021-06-17 17:01
        --------------- */
 
      @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600&family=Barlow:wght@400;700;900&display=swap");
@@ -327,10 +327,11 @@
    /*==================================================*/
    /* === bullets ===*/
    /*==================================================*/
+/* SY this might be causing conflicts making the bullets miss align */
    .bullet-container .bullet {
-     border-radius: 50%;
-     width: 5px;
-     height: 5px;
+     /* border-radius: 50%; */
+     /* width: 5px; */
+     /* height: 5px; */
      background-color: var(--ls-block-bullet-color);
    }
    .bullet-container.bullet-closed {
