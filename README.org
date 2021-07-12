@@ -60,3 +60,4 @@ In the future Logseq might provide a nice way to quickly update themes, but unti
    Big shout out to [[https://github.com/cannibalox][cannibalox]] for his amazing theme [[https://github.com/cannibalox/logseq-dark-hpx][logseq-dark-hpx]] which I used as a template to create this one with his permission.
   
   
+
