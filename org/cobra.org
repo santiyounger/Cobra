@@ -1,15 +1,17 @@
   # -*- org-confirm-babel-evaluate: nil -*-
   #+title: Logseq Wasp Theme
-  #+PROPERTY: header-args:css :tangle   /home/santi/Projects/logseq/Cobra/cobra.css
+  #+PROPERTY: header-args:css :tangle C:\Users\santi\Dropbox\Projects\logseq\Cobra\cobra.css
+
+  for linux
+ /home/santi/Projects/logseq/Cobra/cobra.css
   
 * stable test
 ** update time and notes
- I accidentally did a lot of undo redo and I'm not sure if I lost anything, I should have backups in git if needed
    #+BEGIN_SRC css 
-     /* ---------------
-       last update
-2021-06-17 17:21
-       --------------- */
+          /* ---------------
+            last update
+     2021-10-12 18:17
+            --------------- */
    #+END_SRC
 ** start
    #+BEGIN_SRC css
@@ -800,27 +802,6 @@
      margin: 0.8em 0 0.25rem 0;
    }
  #+END_SRC
-** folding titles : bigger arrow
- #+BEGIN_SRC css
-   /*==================================================*/
-   /* == folding titles : bigger arrow == */
-   /*==================================================*/
-
-   a.block-control {
-     margin: -0.4rem 10px 0px 0;
-     padding: 0 24px 0 15px;
-     margin-left: -30px !important;
-   }
-   a.block-control > .w-4 {
-     width: 1.3rem;
-   }
-   a.block-control > .h-4 {
-     height: 1.3rem;
-   }
-   .initial .blocks-container.flex-1 {
-     margin-left: 3px !important;
-   }
- #+END_SRC
 ** tags
  #+BEGIN_SRC css
    /*==================================================*/
@@ -1327,3 +1308,27 @@
    }
 
  #+END_SRC
+* DISABLED 
+* DISABLED - folding titles : bigger arrow
+  this was causing a strange issue where hovering with the mouse was creating a strange shaking effect.
+  This was orginally taken from canibalox's old theme
+#+BEGIN_SRC elisp
+  /*==================================================*/
+  /* == folding titles : bigger arrow == */
+  /*==================================================*/
+
+  a.block-control {
+    margin: -0.4rem 10px 0px 0;
+    padding: 0 24px 0 15px;
+    margin-left: -30px !important;
+  }
+  a.block-control > .w-4 {
+    width: 1.3rem;
+  }
+  a.block-control > .h-4 {
+    height: 1.3rem;
+  }
+  .initial .blocks-container.flex-1 {
+    margin-left: 3px !important;
+  }
+#+END_SRC
