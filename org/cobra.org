@@ -2,7 +2,9 @@
   #+title: Logseq Wasp Theme
   #+PROPERTY: header-args:css :tangle C:\Users\santi\Dropbox\Projects\logseq\Cobra\cobra.css
 
-  for linux
+ right now the path is set for windows
+  
+ for linux:
  /home/santi/Projects/logseq/Cobra/cobra.css
   
 * stable test
