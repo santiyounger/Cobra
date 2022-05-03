@@ -3,7 +3,7 @@
        --------------- */
 
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600&family=Barlow:wght@400;700;900&display=swap");
-     .white
+     .white-theme
      html[data-theme="light"] {
          --ls-primary-background-color: white;
          --ls-secondary-background-color: #f3f7f8;
@@ -64,7 +64,7 @@
          --admo-text-important: red;
          --admo-bg-important: black;
      }
-         .dark,
+         .dark-theme,
 html[data-theme=dark] {
          --ls-primary-background-color: #242424;
          /*

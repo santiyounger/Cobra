@@ -23,7 +23,7 @@ https://discord.com/channels/725182569297215569/752845138148982877/9693955986986
 ** start
    #+BEGIN_SRC css
      @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600&family=Barlow:wght@400;700;900&display=swap");
-     .white
+     .white-theme
      html[data-theme="light"] {
          --ls-primary-background-color: white;
          --ls-secondary-background-color: #f3f7f8;
@@ -84,7 +84,7 @@ https://discord.com/channels/725182569297215569/752845138148982877/9693955986986
          --admo-text-important: red;
          --admo-bg-important: black;
      }
-         .dark,
+         .dark-theme,
 html[data-theme=dark] {
          --ls-primary-background-color: #242424;
          /*
