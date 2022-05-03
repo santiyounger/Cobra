@@ -1,188 +1,188 @@
 /* ---------------
-       last update
-2021-10-12 18:17
+2022-05-03_15-02
        --------------- */
 
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600&family=Barlow:wght@400;700;900&display=swap");
-.white-theme,
-html[data-theme="light"] {
-    --ls-primary-background-color: white;
-    --ls-secondary-background-color: #f3f7f8;
-    --ls-tertiary-background-color: #fff;
-    /* 
-#CHANGED:60 light mode division line it used to be green
-   */
-    --ls-quaternary-background-color: #e1f0fe;
-    --ls-table-tr-even-background-color: #f4f5f7;
-    --ls-active-primary-color: #d49233;
-    /* 
-#CHANGED:70 light mode: main color for internal links
-   */
-    --ls-active-secondary-color: #a56b16;
-    /* 
-#CHANGED:80 light: hover color
-   */
-    --ls-block-properties-background-color: var(--ls-tertiary-background-color);
-    --ls-search-background-color: var(--ls-primary-background-color);
-    --ls-border-color: #ccc;
-    --ls-guideline-color: var(--ls-border-color);
-    --ls-menu-hover-color: var(--ls-a-chosen-bg);
-    --ls-primary-text-color: #171717;
-    --ls-secondary-text-color: #161e2e;
-    --ls-title-text-color: #222;
-    --ls-link-text-color: var(--ls-active-primary-color);
-    --ls-link-text-hover-color: var(--ls-active-secondary-color);
-    --ls-link-ref-text-color: var(--ls-link-text-color);
-    --ls-link-ref-text-hover-color: var(--ls-link-text-hover-color);
-    --ls-tag-text-color: var(--ls-link-text-color);
-    --ls-tag-text-hover-color: var(--ls-link-text-hover-color);
-    --ls-slide-background-color: #fff;
-    --ls-block-bullet-border-color: #00b3ff;
-    --ls-block-bullet-color: #394b59;
-    --ls-block-highlight-color: #c0e6fd;
-    --ls-selection-background-color: #e4f2ff;
-    --ls-page-checkbox-color: var(--ls-active-primary-color);
-    --ls-page-checkbox-border-color: #8c8c8c;
-    --ls-page-blockquote-color: var(--ls-primary-text-color);
-    --ls-page-blockquote-bg-color: transparent;
-    --ls-page-blockquote-border-color: var(--ls-active-primary-color);
-    --ls-page-inline-code-bg-color: var(--ls-secondary-background-color);
-    --ls-page-inline-code-color: var(--ls-primary-text-color);
-    --ls-scrollbar-foreground-color: rgba(0, 0, 0, 0.1);
-    --ls-scrollbar-background-color: rgba(0, 0, 0, 0.05);
-    --ls-scrollbar-thumb-hover-color: rgba(0, 0, 0, 0.2);
-    --ls-head-text-color: var(--ls-link-text-color);
-    --ls-icon-color: #6b7280;
-    --ls-search-icon-color: var(--ls-icon-color);
-    --ls-a-chosen-bg: #f4f5f7;
-    --ls-right-sidebar-code-bg-color: var(--ls-secondary-background-color);
-    --color-level-1: var(--ls-secondary-background-color);
-    --color-level-2: var(--ls-tertiary-background-color);
-    --color-level-3: var(--ls-quaternary-background-color);
-    --color-level-4: #d0e6fa;
-    --color-level-5: #bbdaf6;
-    --ls-block-ref-link-text-color: #dc3d85;
-    --admo-text-important: red;
-    --admo-bg-important: black;
-}
-.dark-theme {
-    --ls-primary-background-color: #242424;
-    /* 
-#CHANGED:0 background color 
-   */
-    --ls-secondary-background-color: rgb(22, 22, 22);
-    --ls-tertiary-background-color: rgb(38, 39, 41);
-    --ls-block-properties-background-color: #111415c2;
-    --ls-search-background-color: #000000;
-    --ls-border-color: #323232;
-    --ls-menu-hover-color: #1c3444;
-    --ls-primary-text-color: #faf2d6;
-    /* 
-#CHANGED:100 main text color
-   */
-    --ls-secondary-text-color: #c7c7c7;
-    --ls-title-text-color: #d3a628;
-    /* 
-#CHANGED:110 page text title color 
-   */
-    --ls-link-text-color: #d3a628;
-    /*
-#CHANGED:140 text color 
-   */
-    --ls-link-text-hover-color: #e6992a;
-    /*  
-#CHANGED:40 hover over links
-   */
-    --ls-link-ref-text-color: #d3a628;
-    /* 
-  #CHANGED:130 text [[link]]  color
-   */
-    --ls-link-ref-text-hover-color: var(--ls-link-text-hover-color);
-    --ls-tag-text-color: var(--ls-link-text-color);
-    --ls-tag-text-hover-color: var(--ls-link-text-hover-color);
-    --ls-block-bullet-border-color: #d3a628;
-    --ls-block-bullet-color: #d3a628;
-    /*  
-  #CHANGED:30 bullet outline dot color
-   */
-    --ls-block-highlight-color: #202e3a;
-    --ls-page-checkbox-color: #4e7c9a;
-    --ls-page-checkbox-border-color: #477ba8;
-    --ls-page-blockquote-color: var(--ls-primary-text-color);
-    --ls-page-blockquote-bg-color: var(--ls-secondary-background-color);
-    --ls-page-blockquote-border-color: var(--ls-secondary-text-color);
-    --ls-page-inline-code-color: #fff;
-    /* 
-#CHANGED:50 inline code
-   */
-    --ls-page-inline-code-bg-color: #575757;
-    --ls-page-title-size: 28px;
-    --ls-scrollbar-color: #000;
-    --ls-scrollbar-thumb-hover-color: #1d5062;
-    --ls-scrollbar-thumb-color: var(--ls-secondary-background-color);
-    --ls-head-text-color: var(--ls-link-text-color);
-    --ls-icon-color: #d3a628;
-    /*
-  #CHANGED:90 logo, back arrows 
-   */
-    --ls-search-icon-color: #d3a628;
-    /* 
-  #CHANGED:120 search bar 
-   */
-    --ls-a-chosen-bg: #172a36;
-    --ls-right-sidebar-code-bg-color: #04303c;
-    --ls-active-primary-color: #37638a;
-    --ls-active-secondary-color: #5fa2df;
-    --tagpills-bg: #202a35;
-    --tagpills-text: #5e99c9;
-    --tagpills-border: #254f63;
-    --tagpills-border-radius: 4px;
-    --accent-bgcolor: #16364a;
-    --marker-switch-bgcolor: #39180deb;
-    --marker-switch-color: #d3a628;
-    /* 
-#CHANGED:0 TODO LATER COLOR 
-   */
-    --marker-switch-opa: 0.7;
-    --datepicker-active-bgcolor: #650707;
-    --datepicker-active-bordercolor: #fff;
-    --datepicker-active-bordersize: 0px;
-    --datepicker-active-color: white;
-    --datepicker-available-hovercolor: #86f571;
-    --datepicker-available-hoverbgcolor: #192731;
-    --text-accent: #c8b16f;
-    /* 
-  #CHANGED:30 file path text, and external links 
-   */
-    --text-hightlight: #d3a628;
-    --inverted-text: #262626;
-    --highlight-light: #0b0a0bf0;
-    --ls-block-ref-link-text-color: #74ced8;
-    --admo-text-important: #fa4320;
-    --admo-bg-important: #171717;
-    --background: #282a36;
-    --light-background: #343746;
-    --lighter-background: #424450;
-    --dark-background: #21222c;
-    --darker-background: #191a21;
-    --foreground: #f8f8f2;
-    --current-line: #44475a;
-    --comment: #777;
-    --white: var(--foreground);
-    --red: #ff5555;
-    --orange: #dd7f3c;
-    --yellow: #ffea62;
-    --green: #71e48e;
-    --purple: #77c1ec;
-    --purple-hover: #bf93f988;
-    --cyan: #8be9fd;
-    --cyan-hover: #8be9fd88;
-    --pink: #ea8dcc;
-    --pink-hover: #ff79c688;
-}
-:root {
-    --main-container-width: 840px;
-}
+     .white
+     html[data-theme="light"] {
+         --ls-primary-background-color: white;
+         --ls-secondary-background-color: #f3f7f8;
+         --ls-tertiary-background-color: #fff;
+         /*
+     #CHANGED:60 light mode division line it used to be green
+        */
+         --ls-quaternary-background-color: #e1f0fe;
+         --ls-table-tr-even-background-color: #f4f5f7;
+         --ls-active-primary-color: #d49233;
+         /*
+     #CHANGED:70 light mode: main color for internal links
+        */
+         --ls-active-secondary-color: #a56b16;
+         /*
+     #CHANGED:80 light: hover color
+        */
+         --ls-block-properties-background-color: var(--ls-tertiary-background-color);
+         --ls-search-background-color: var(--ls-primary-background-color);
+         --ls-border-color: #ccc;
+         --ls-guideline-color: var(--ls-border-color);
+         --ls-menu-hover-color: var(--ls-a-chosen-bg);
+         --ls-primary-text-color: #171717;
+         --ls-secondary-text-color: #161e2e;
+         --ls-title-text-color: #222;
+         --ls-link-text-color: var(--ls-active-primary-color);
+         --ls-link-text-hover-color: var(--ls-active-secondary-color);
+         --ls-link-ref-text-color: var(--ls-link-text-color);
+         --ls-link-ref-text-hover-color: var(--ls-link-text-hover-color);
+         --ls-tag-text-color: var(--ls-link-text-color);
+         --ls-tag-text-hover-color: var(--ls-link-text-hover-color);
+         --ls-slide-background-color: #fff;
+         --ls-block-bullet-border-color: #00b3ff;
+         --ls-block-bullet-color: #394b59;
+         --ls-block-highlight-color: #c0e6fd;
+         --ls-selection-background-color: #e4f2ff;
+         --ls-page-checkbox-color: var(--ls-active-primary-color);
+         --ls-page-checkbox-border-color: #8c8c8c;
+         --ls-page-blockquote-color: var(--ls-primary-text-color);
+         --ls-page-blockquote-bg-color: transparent;
+         --ls-page-blockquote-border-color: var(--ls-active-primary-color);
+         --ls-page-inline-code-bg-color: var(--ls-secondary-background-color);
+         --ls-page-inline-code-color: var(--ls-primary-text-color);
+         --ls-scrollbar-foreground-color: rgba(0, 0, 0, 0.1);
+         --ls-scrollbar-background-color: rgba(0, 0, 0, 0.05);
+         --ls-scrollbar-thumb-hover-color: rgba(0, 0, 0, 0.2);
+         --ls-head-text-color: var(--ls-link-text-color);
+         --ls-icon-color: #6b7280;
+         --ls-search-icon-color: var(--ls-icon-color);
+         --ls-a-chosen-bg: #f4f5f7;
+         --ls-right-sidebar-code-bg-color: var(--ls-secondary-background-color);
+         --color-level-1: var(--ls-secondary-background-color);
+         --color-level-2: var(--ls-tertiary-background-color);
+         --color-level-3: var(--ls-quaternary-background-color);
+         --color-level-4: #d0e6fa;
+         --color-level-5: #bbdaf6;
+         --ls-block-ref-link-text-color: #dc3d85;
+         --admo-text-important: red;
+         --admo-bg-important: black;
+     }
+         .dark,
+html[data-theme=dark] {
+         --ls-primary-background-color: #242424;
+         /*
+     #CHANGED:0 background color
+        */
+         --ls-secondary-background-color: rgb(22, 22, 22);
+         --ls-tertiary-background-color: rgb(38, 39, 41);
+         --ls-block-properties-background-color: #111415c2;
+         --ls-search-background-color: #000000;
+         --ls-border-color: #323232;
+         --ls-menu-hover-color: #1c3444;
+         --ls-primary-text-color: #faf2d6;
+         /*
+     #CHANGED:100 main text color
+        */
+         --ls-secondary-text-color: #c7c7c7;
+         --ls-title-text-color: #d3a628;
+         /*
+     #CHANGED:110 page text title color
+        */
+         --ls-link-text-color: #d3a628;
+         /*
+     #CHANGED:140 text color
+        */
+         --ls-link-text-hover-color: #e6992a;
+         /*
+     #CHANGED:40 hover over links
+        */
+         --ls-link-ref-text-color: #d3a628;
+         /*
+       #CHANGED:130 text [[link]]  color
+        */
+         --ls-link-ref-text-hover-color: var(--ls-link-text-hover-color);
+         --ls-tag-text-color: var(--ls-link-text-color);
+         --ls-tag-text-hover-color: var(--ls-link-text-hover-color);
+         --ls-block-bullet-border-color: #d3a628;
+         --ls-block-bullet-color: #d3a628;
+         /*
+       #CHANGED:30 bullet outline dot color
+        */
+         --ls-block-highlight-color: #202e3a;
+         --ls-page-checkbox-color: #4e7c9a;
+         --ls-page-checkbox-border-color: #477ba8;
+         --ls-page-blockquote-color: var(--ls-primary-text-color);
+         --ls-page-blockquote-bg-color: var(--ls-secondary-background-color);
+         --ls-page-blockquote-border-color: var(--ls-secondary-text-color);
+         --ls-page-inline-code-color: #fff;
+         /*
+     #CHANGED:50 inline code
+        */
+         --ls-page-inline-code-bg-color: #575757;
+         --ls-page-title-size: 28px;
+         --ls-scrollbar-color: #000;
+         --ls-scrollbar-thumb-hover-color: #1d5062;
+         --ls-scrollbar-thumb-color: var(--ls-secondary-background-color);
+         --ls-head-text-color: var(--ls-link-text-color);
+         --ls-icon-color: #d3a628;
+         /*
+       #CHANGED:90 logo, back arrows
+        */
+         --ls-search-icon-color: #d3a628;
+         /*
+       #CHANGED:120 search bar
+        */
+         --ls-a-chosen-bg: #172a36;
+         --ls-right-sidebar-code-bg-color: #04303c;
+         --ls-active-primary-color: #37638a;
+         --ls-active-secondary-color: #5fa2df;
+         --tagpills-bg: #202a35;
+         --tagpills-text: #5e99c9;
+         --tagpills-border: #254f63;
+         --tagpills-border-radius: 4px;
+         --accent-bgcolor: #16364a;
+         --marker-switch-bgcolor: #39180deb;
+         --marker-switch-color: #d3a628;
+         /*
+     #CHANGED:0 TODO LATER COLOR
+        */
+         --marker-switch-opa: 0.7;
+         --datepicker-active-bgcolor: #650707;
+         --datepicker-active-bordercolor: #fff;
+         --datepicker-active-bordersize: 0px;
+         --datepicker-active-color: white;
+         --datepicker-available-hovercolor: #86f571;
+         --datepicker-available-hoverbgcolor: #192731;
+         --text-accent: #c8b16f;
+         /*
+       #CHANGED:30 file path text, and external links
+        */
+         --text-hightlight: #d3a628;
+         --inverted-text: #262626;
+         --highlight-light: #0b0a0bf0;
+         --ls-block-ref-link-text-color: #74ced8;
+         --admo-text-important: #fa4320;
+         --admo-bg-important: #171717;
+         --background: #282a36;
+         --light-background: #343746;
+         --lighter-background: #424450;
+         --dark-background: #21222c;
+         --darker-background: #191a21;
+         --foreground: #f8f8f2;
+         --current-line: #44475a;
+         --comment: #777;
+         --white: var(--foreground);
+         --red: #ff5555;
+         --orange: #dd7f3c;
+         --yellow: #ffea62;
+         --green: #71e48e;
+         --purple: #77c1ec;
+         --purple-hover: #bf93f988;
+         --cyan: #8be9fd;
+         --cyan-hover: #8be9fd88;
+         --pink: #ea8dcc;
+         --pink-hover: #ff79c688;
+     }
+     :root {
+         --main-container-width: 840px;
+     }
 
 /*==================================================*/
 /* == fonts == */
@@ -191,8 +191,8 @@ html {
     /* font-family: Cairo, Inter, sans-serif, system-ui, -apple-system,
     BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
     serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol !important; */
-    /* 
-  #OFF:10 font html off 
+    /*
+  #OFF:10 font html off
    */
 }
 
@@ -246,7 +246,7 @@ html {
 /*    #search.flex-1 > .flex {
     width: 700px;
     background-color: #000;
-    display: block; 
+    display: block;
         height: 70px;
         margin-top:-20px;
         left:0%;
@@ -256,10 +256,10 @@ html {
     #search.flex-1 > .flex::before {
         content:"";
         position: relative;
-        display: inline; 
+        display: inline;
         left: 690px;
     border-bottom: 43px solid #0000;
-      border-right: 20px solid #0000;  
+      border-right: 20px solid #0000;
           border-top: 40px solid #000;
           border-left: 60px solid #000;
     }
@@ -372,7 +372,7 @@ mark {
   color: var(--marker-switch-color);
 }
 
-/* 
+/*
 #OFF:0 removed changes to TODO, marging and emoji
  */
 /*--------------------
@@ -391,9 +391,9 @@ mark {
   margin: 1px 0px;
   position: absolute;
   left: 22px;
-} 
+}
 ---------------------*/
-/* 
+/*
 #OFF:5 removed changes to DOING, marging and emoji
  */
 /*--------------------
@@ -412,7 +412,7 @@ mark {
   margin: 0 0px;
   position: absolute;
   left: 20px;
-} 
+}
 -------------------*/
 
 /*==================================================*/
@@ -420,8 +420,8 @@ mark {
 /*==================================================*/
 .CodeMirror {
   /* font-family: Fira Code, Consolas, monospace; */
-  /* 
-  #OFF:15 desactivated font 
+  /*
+  #OFF:15 desactivated font
   */
   font-size: 12px;
   color: #efefef;
@@ -603,12 +603,12 @@ iframe {
 /* == tables == */
 /*==================================================*/
 
-.dark-theme tr:nth-child(2n),
-.dark-theme tr:nth-child(2n + 1) {
+.dark tr:nth-child(2n),
+.dark tr:nth-child(2n + 1) {
   background: var(--ls-primarry-backround-color);
   border-bottom: 1px solid var(--ls-border-color);
 }
-.dark-theme th {
+.dark th {
   color: var(--ls-page-inline-code-color);
   background-color: var(--ls-secondary-background-color);
   border-bottom: 1px solid var(--ls-border-color);
@@ -668,7 +668,7 @@ iframe {
   font-weight: 600;
   color: var(--ls-primary-text-color);
 }
-/* 
+/*
 #OFF:0 daily journal emoji
  */
 /*---------------------
@@ -721,6 +721,25 @@ h1.title {
 .ls-block h3 {
   font-size: 1.17em;
   margin: 0.8em 0 0.25rem 0;
+}
+
+/*==================================================*/
+/* == folding titles : bigger arrow == */
+/*==================================================*/
+
+a.block-control {
+  margin: -0.4rem 10px 0px 0;
+  padding: 0 24px 0 15px;
+  margin-left: -30px !important;
+}
+a.block-control > .w-4 {
+  width: 1.3rem;
+}
+a.block-control > .h-4 {
+  height: 1.3rem;
+}
+.initial .blocks-container.flex-1 {
+  margin-left: 3px !important;
 }
 
 /*==================================================*/
@@ -798,7 +817,7 @@ a.tag[href*="audio"]:after {
 /*==================================================*/
 .done {
   text-decoration: line-through #242424;
-  /* 
+  /*
 #CHANGED:0 lowered opacity for done tasks
  */
   opacity: 0.7;
@@ -807,15 +826,15 @@ a.tag[href*="audio"]:after {
 /*==================================================*/
 /* === SCHEDULED / DEADLINE - Datepicker ====*/
 /*==================================================*/
-.dark-theme .datepicker td.active,
-.dark-theme .datepicker td.active:hover {
+.dark .datepicker td.active,
+.dark .datepicker td.active:hover {
   background-color: var(--datepicker-active-bgcolor);
   border: var(--datepicker-active-bordersize) solid;
   border-color: var(--datepicker-active-bordercolor);
   color: var(--datepicker-active-color);
 }
-.dark-theme .datepicker td.available:hover,
-.dark-theme .datepicker th.available:hover {
+.dark .datepicker td.available:hover,
+.dark .datepicker th.available:hover {
   background: var(--datepicker-available-hoverbgcolor);
   color: var(--datepicker-available-hovercolor);
 }
@@ -877,12 +896,12 @@ html:not(.is-mac) ::-webkit-scrollbar {
 a.external-link {
   border-bottom: 0px;
   text-decoration: underline;
-  /* 
-  #ADDED:0 underlined external text 
+  /*
+  #ADDED:0 underlined external text
    */
 }
-/* 
-#OFF:20 symbol for external links 
+/*
+#OFF:20 symbol for external links
    */
 /*---------------------
 a.external-link:after {

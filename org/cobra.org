@@ -1,39 +1,44 @@
   # -*- org-confirm-babel-evaluate: nil -*-
   #+title: Logseq Wasp Theme
-  #+PROPERTY: header-args:css :tangle C:\Users\santi\Dropbox\Projects\logseq\Cobra\cobra.css
+  #+PROPERTY: header-args:css :tangle   D:\OneDrive-SY\2-Passions\Projects\Logseq\Cobra\cobra.css
 
- right now the path is set for windows
-  
- for linux:
- /home/santi/Projects/logseq/Cobra/cobra.css
-  
 * stable test
 ** update time and notes
-   #+BEGIN_SRC css 
+ I accidentally did a lot of undo redo and I'm not sure if I lost anything, I should have backups in git if needed
+*** 2022-05-03
+    changed the file path:
+    /home/santi/Projects/logseq/Cobra/cobra.css
+
+   I had to change dark-theme to .dark to fix broken theme. more info here
+
+   also change .white-theme for .white
+https://discord.com/channels/725182569297215569/752845138148982877/969395598698618910
+   https://github.com/logseq/logseq/pull/4652
+
+   #+BEGIN_SRC css
           /* ---------------
-            last update
-     2021-10-12 18:17
+     2022-05-03_15-02
             --------------- */
    #+END_SRC
 ** start
    #+BEGIN_SRC css
      @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600&family=Barlow:wght@400;700;900&display=swap");
-     .white-theme,
+     .white
      html[data-theme="light"] {
          --ls-primary-background-color: white;
          --ls-secondary-background-color: #f3f7f8;
          --ls-tertiary-background-color: #fff;
-         /* 
+         /*
      #CHANGED:60 light mode division line it used to be green
         ,*/
          --ls-quaternary-background-color: #e1f0fe;
          --ls-table-tr-even-background-color: #f4f5f7;
          --ls-active-primary-color: #d49233;
-         /* 
+         /*
      #CHANGED:70 light mode: main color for internal links
         ,*/
          --ls-active-secondary-color: #a56b16;
-         /* 
+         /*
      #CHANGED:80 light: hover color
         ,*/
          --ls-block-properties-background-color: var(--ls-tertiary-background-color);
@@ -79,10 +84,11 @@
          --admo-text-important: red;
          --admo-bg-important: black;
      }
-     .dark-theme {
+         .dark,
+html[data-theme=dark] {
          --ls-primary-background-color: #242424;
-         /* 
-     #CHANGED:0 background color 
+         /*
+     #CHANGED:0 background color
         ,*/
          --ls-secondary-background-color: rgb(22, 22, 22);
          --ls-tertiary-background-color: rgb(38, 39, 41);
@@ -91,24 +97,24 @@
          --ls-border-color: #323232;
          --ls-menu-hover-color: #1c3444;
          --ls-primary-text-color: #faf2d6;
-         /* 
+         /*
      #CHANGED:100 main text color
         ,*/
          --ls-secondary-text-color: #c7c7c7;
          --ls-title-text-color: #d3a628;
-         /* 
-     #CHANGED:110 page text title color 
+         /*
+     #CHANGED:110 page text title color
         ,*/
          --ls-link-text-color: #d3a628;
          /*
-     #CHANGED:140 text color 
+     #CHANGED:140 text color
         ,*/
          --ls-link-text-hover-color: #e6992a;
-         /*  
+         /*
      #CHANGED:40 hover over links
         ,*/
          --ls-link-ref-text-color: #d3a628;
-         /* 
+         /*
        #CHANGED:130 text [[link]]  color
         ,*/
          --ls-link-ref-text-hover-color: var(--ls-link-text-hover-color);
@@ -116,7 +122,7 @@
          --ls-tag-text-hover-color: var(--ls-link-text-hover-color);
          --ls-block-bullet-border-color: #d3a628;
          --ls-block-bullet-color: #d3a628;
-         /*  
+         /*
        #CHANGED:30 bullet outline dot color
         ,*/
          --ls-block-highlight-color: #202e3a;
@@ -126,7 +132,7 @@
          --ls-page-blockquote-bg-color: var(--ls-secondary-background-color);
          --ls-page-blockquote-border-color: var(--ls-secondary-text-color);
          --ls-page-inline-code-color: #fff;
-         /* 
+         /*
      #CHANGED:50 inline code
         ,*/
          --ls-page-inline-code-bg-color: #575757;
@@ -137,11 +143,11 @@
          --ls-head-text-color: var(--ls-link-text-color);
          --ls-icon-color: #d3a628;
          /*
-       #CHANGED:90 logo, back arrows 
+       #CHANGED:90 logo, back arrows
         ,*/
          --ls-search-icon-color: #d3a628;
-         /* 
-       #CHANGED:120 search bar 
+         /*
+       #CHANGED:120 search bar
         ,*/
          --ls-a-chosen-bg: #172a36;
          --ls-right-sidebar-code-bg-color: #04303c;
@@ -154,8 +160,8 @@
          --accent-bgcolor: #16364a;
          --marker-switch-bgcolor: #39180deb;
          --marker-switch-color: #d3a628;
-         /* 
-     #CHANGED:0 TODO LATER COLOR 
+         /*
+     #CHANGED:0 TODO LATER COLOR
         ,*/
          --marker-switch-opa: 0.7;
          --datepicker-active-bgcolor: #650707;
@@ -165,8 +171,8 @@
          --datepicker-available-hovercolor: #86f571;
          --datepicker-available-hoverbgcolor: #192731;
          --text-accent: #c8b16f;
-         /* 
-       #CHANGED:30 file path text, and external links 
+         /*
+       #CHANGED:30 file path text, and external links
         ,*/
          --text-hightlight: #d3a628;
          --inverted-text: #262626;
@@ -207,13 +213,13 @@
          /* font-family: Cairo, Inter, sans-serif, system-ui, -apple-system,
          BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
          serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol !important; */
-         /* 
-       #OFF:10 font html off 
+         /*
+       #OFF:10 font html off
         ,*/
      }
-   #+END_SRC 
+   #+END_SRC
 ** header
-   #+BEGIN_SRC css 
+   #+BEGIN_SRC css
      /*==================================================*/
      /* header                                           */
      /*==================================================*/
@@ -222,7 +228,7 @@
          height: 2.4rem;
          background-color: var(--ls-primary-background-color);
      }
-   #+END_SRC 
+   #+END_SRC
 ** main container
    #+BEGIN_SRC css
      /*==================================================*/
@@ -271,7 +277,7 @@
      padding: 0;
      max-width: var(--main-container-width); /* wider main container */
    }
- #+END_SRC 
+ #+END_SRC
 ** blocks children tree line
  #+BEGIN_SRC css
    /*==================================================*/
@@ -286,7 +292,7 @@
    /*   left: -5px; */
    /*   position: relative; */
    /* } */
-   #+END_SRC 
+   #+END_SRC
 ** search deco
    #+BEGIN_SRC css
      /*==================================================*/
@@ -295,7 +301,7 @@
      /*    #search.flex-1 > .flex {
          width: 700px;
          background-color: #000;
-         display: block; 
+         display: block;
              height: 70px;
              margin-top:-20px;
              left:0%;
@@ -305,10 +311,10 @@
          #search.flex-1 > .flex::before {
              content:"";
              position: relative;
-             display: inline; 
+             display: inline;
              left: 690px;
          border-bottom: 43px solid #0000;
-           border-right: 20px solid #0000;  
+           border-right: 20px solid #0000;
                border-top: 40px solid #000;
                border-left: 60px solid #000;
          }
@@ -378,7 +384,7 @@
      text-decoration: underline;
    }
  #+END_SRC
-** bullets 
+** bullets
  #+BEGIN_SRC css
    /*==================================================*/
    /* === bullets ===*/
@@ -412,7 +418,7 @@
      border: 1px solid var(--ls-page-checkbox-border-color) !important;
      border-radius: 20%;
    }
- #+END_SRC  
+ #+END_SRC
 ** todo / doing marker switch
  #+BEGIN_SRC css
      /*==================================================*/
@@ -432,7 +438,7 @@
        color: var(--marker-switch-color);
      }
 
-     /* 
+     /*
      #OFF:0 removed changes to TODO, marging and emoji
       ,*/
      /*--------------------
@@ -451,9 +457,9 @@
        margin: 1px 0px;
        position: absolute;
        left: 22px;
-     } 
+     }
      ---------------------*/
-     /* 
+     /*
      #OFF:5 removed changes to DOING, marging and emoji
       ,*/
      /*--------------------
@@ -472,18 +478,18 @@
        margin: 0 0px;
        position: absolute;
        left: 20px;
-     } 
+     }
      -------------------*/
    #+END_SRC
 ** code mirror code blocks
- #+BEGIN_SRC css 
+ #+BEGIN_SRC css
    /*==================================================*/
    /* == codemirror code blocks == */
    /*==================================================*/
    .CodeMirror {
      /* font-family: Fira Code, Consolas, monospace; */
-     /* 
-     #OFF:15 desactivated font 
+     /*
+     #OFF:15 desactivated font
      ,*/
      font-size: 12px;
      color: #efefef;
@@ -673,12 +679,12 @@
     /* == tables == */
     /*==================================================*/
 
-    .dark-theme tr:nth-child(2n),
-    .dark-theme tr:nth-child(2n + 1) {
+    .dark tr:nth-child(2n),
+    .dark tr:nth-child(2n + 1) {
       background: var(--ls-primarry-backround-color);
       border-bottom: 1px solid var(--ls-border-color);
     }
-    .dark-theme th {
+    .dark th {
       color: var(--ls-page-inline-code-color);
       background-color: var(--ls-secondary-background-color);
       border-bottom: 1px solid var(--ls-border-color);
@@ -747,7 +753,7 @@
      font-weight: 600;
      color: var(--ls-primary-text-color);
    }
-   /* 
+   /*
    #OFF:0 daily journal emoji
     ,*/
    /*---------------------
@@ -802,6 +808,27 @@
    .ls-block h3 {
      font-size: 1.17em;
      margin: 0.8em 0 0.25rem 0;
+   }
+ #+END_SRC
+** folding titles : bigger arrow
+ #+BEGIN_SRC css
+   /*==================================================*/
+   /* == folding titles : bigger arrow == */
+   /*==================================================*/
+
+   a.block-control {
+     margin: -0.4rem 10px 0px 0;
+     padding: 0 24px 0 15px;
+     margin-left: -30px !important;
+   }
+   a.block-control > .w-4 {
+     width: 1.3rem;
+   }
+   a.block-control > .h-4 {
+     height: 1.3rem;
+   }
+   .initial .blocks-container.flex-1 {
+     margin-left: 3px !important;
    }
  #+END_SRC
 ** tags
@@ -883,7 +910,7 @@
    /*==================================================*/
    .done {
      text-decoration: line-through #242424;
-     /* 
+     /*
    #CHANGED:0 lowered opacity for done tasks
     ,*/
      opacity: 0.7;
@@ -895,15 +922,15 @@
    /*==================================================*/
    /* === SCHEDULED / DEADLINE - Datepicker ====*/
    /*==================================================*/
-   .dark-theme .datepicker td.active,
-   .dark-theme .datepicker td.active:hover {
+   .dark .datepicker td.active,
+   .dark .datepicker td.active:hover {
      background-color: var(--datepicker-active-bgcolor);
      border: var(--datepicker-active-bordersize) solid;
      border-color: var(--datepicker-active-bordercolor);
      color: var(--datepicker-active-color);
    }
-   .dark-theme .datepicker td.available:hover,
-   .dark-theme .datepicker th.available:hover {
+   .dark .datepicker td.available:hover,
+   .dark .datepicker th.available:hover {
      background: var(--datepicker-available-hoverbgcolor);
      color: var(--datepicker-available-hovercolor);
    }
@@ -973,12 +1000,12 @@
    a.external-link {
      border-bottom: 0px;
      text-decoration: underline;
-     /* 
-     #ADDED:0 underlined external text 
+     /*
+     #ADDED:0 underlined external text
       ,*/
    }
-   /* 
-   #OFF:20 symbol for external links 
+   /*
+   #OFF:20 symbol for external links
       ,*/
    /*---------------------
    a.external-link:after {
@@ -1129,10 +1156,10 @@
    .ls-block:not(:focus-within) > div:first-child .bullet {
      background-color: var(--ls-block-bullet-color);
    }
- #+END_SRC 
+ #+END_SRC
 ** ----------------------- additional tweaks
-  take from Piotr 
- #+BEGIN_SRC css   
+  take from Piotr
+ #+BEGIN_SRC css
      /*==================================================*/
    /* changing color of rename */
      .fixed.bottom-0.inset-x-0.px-4.pb-4 > div:first-child > div {
@@ -1310,27 +1337,3 @@
    }
 
  #+END_SRC
-* DISABLED 
-* DISABLED - folding titles : bigger arrow
-  this was causing a strange issue where hovering with the mouse was creating a strange shaking effect.
-  This was orginally taken from canibalox's old theme
-#+BEGIN_SRC elisp
-  /*==================================================*/
-  /* == folding titles : bigger arrow == */
-  /*==================================================*/
-
-  a.block-control {
-    margin: -0.4rem 10px 0px 0;
-    padding: 0 24px 0 15px;
-    margin-left: -30px !important;
-  }
-  a.block-control > .w-4 {
-    width: 1.3rem;
-  }
-  a.block-control > .h-4 {
-    height: 1.3rem;
-  }
-  .initial .blocks-container.flex-1 {
-    margin-left: 3px !important;
-  }
-#+END_SRC
