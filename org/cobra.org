@@ -4,7 +4,14 @@
 
 * stable test
 ** update time and notes
- I accidentally did a lot of undo redo and I'm not sure if I lost anything, I should have backups in git if needed
+   # not sure when the date of this was, but early 2022 or late 2021: I accidentally did a lot of undo redo and I'm not sure if I lost anything, I should have backups in git if needed
+*** 2022-06-02
+  improved things working with bullet threading, removed the hovering issue that made using the mouse on top of a bullet act weird and jiggle, the issue was in one of these: which have been disabled, the original code was by cannibalox, which worked for older versions of logseq, but now in v0.7 it needed to be removed, these headings:
+  
+fix spacing - TWEAK VALUES! / DISABLE
+folding titles : bigger arrow / SY DISABLED
+ 
+  #+END_SRC
 *** 2022-05-03
     changed the file path:
     /home/santi/Projects/logseq/Cobra/cobra.css
@@ -17,7 +24,7 @@ https://discord.com/channels/725182569297215569/752845138148982877/9693955986986
 
    #+BEGIN_SRC css
           /* ---------------
-     2022-05-03_15-02
+     
             --------------- */
    #+END_SRC
 ** start
@@ -204,20 +211,6 @@ html[data-theme=dark] {
          --main-container-width: 840px;
      }
    #+END_SRC
-** fonts
-   #+BEGIN_SRC css
-     /*==================================================*/
-     /* == fonts == */
-     /*==================================================*/
-     html {
-         /* font-family: Cairo, Inter, sans-serif, system-ui, -apple-system,
-         BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
-         serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol !important; */
-         /*
-       #OFF:10 font html off
-        ,*/
-     }
-   #+END_SRC
 ** header
    #+BEGIN_SRC css
      /*==================================================*/
@@ -244,28 +237,6 @@ html[data-theme=dark] {
      }
    #+END_SRC
 
-** right side bar
- #+BEGIN_SRC csr
-   /*==================================================*/
-   /* == right sidebar == */
-   /*==================================================*/
-   .cp__right-sidebar {
-     position: fixed;
-     top: 3rem;
-     right: 0;
-     width: 0;
-     opacity: 0.5;
-     height: 102vh; /*calc(100vh - 3rem);*/
-     overflow-x: hidden;
-     overflow-y: auto;
-     z-index: 9;
-     transition: width 0.3s, opacity 0.2s;
-     border-radius: var(--ls-border-radius-low) 0 0 0;
-     box-sizing: border-box;
-     background-color: var(--ls-secondary-background-color, #d8e1e8);
-     padding-bottom: 48px;
-   }
- #+END_SRC
 ** block margin
  #+BEGIN_SRC css
    /*==================================================*/
@@ -278,21 +249,6 @@ html[data-theme=dark] {
      max-width: var(--main-container-width); /* wider main container */
    }
  #+END_SRC
-** blocks children tree line
- #+BEGIN_SRC css
-   /*==================================================*/
-   /* == blocks children tree line == */
-   /*==================================================*/
-
- /* not working */
-   /* .block-children { */
-   /*   border-left: 1px solid; */
-   /*   border-left-color: var(--ls-guideline-color, #ddd); */
-   /*   /\* border-left-color: #ff0000; *\/ */
-   /*   left: -5px; */
-   /*   position: relative; */
-   /* } */
-   #+END_SRC
 ** search deco
    #+BEGIN_SRC css
      /*==================================================*/
@@ -810,27 +766,6 @@ html[data-theme=dark] {
      margin: 0.8em 0 0.25rem 0;
    }
  #+END_SRC
-** folding titles : bigger arrow
- #+BEGIN_SRC css
-   /*==================================================*/
-   /* == folding titles : bigger arrow == */
-   /*==================================================*/
-
-   a.block-control {
-     margin: -0.4rem 10px 0px 0;
-     padding: 0 24px 0 15px;
-     margin-left: -30px !important;
-   }
-   a.block-control > .w-4 {
-     width: 1.3rem;
-   }
-   a.block-control > .h-4 {
-     height: 1.3rem;
-   }
-   .initial .blocks-container.flex-1 {
-     margin-left: 3px !important;
-   }
- #+END_SRC
 ** tags
  #+BEGIN_SRC css
    /*==================================================*/
@@ -1085,6 +1020,117 @@ html[data-theme=dark] {
    }
 
  #+END_SRC
+** unordered lists
+ #+BEGIN_SRC css
+   /*==================================================*/
+   /*===== unordered lists =========*/
+   /*==================================================*/
+   ul {
+     list-style-type: square;
+     margin-top: 10px;
+   }
+   ul li::marker {
+     font-size: 10px;
+   }
+   /*==================================================*/
+   .left {
+     float: left;
+     margin: 20px 20px 20px 0px;
+   }
+   .right {
+     float: right;
+     margin: 20px 0px 20px 20px;
+   }
+
+ #+END_SRC
+** highlight current path by cannnibalox v0.1
+  #+BEGIN_SRC css
+   /*==================================================*/
+   /* === highlight current path by cannnibalox v0.1 ===*/
+   /*==================================================*/
+
+   .ls-block .bullet {
+     background-color: #961327;
+   }
+
+   .ls-block:not(:focus-within) > div:first-child .bullet {
+     background-color: var(--ls-block-bullet-color);
+   }
+ #+END_SRC
+** ----------------------- additional tweaks
+  take from Piotr
+ #+BEGIN_SRC css
+     /*==================================================*/
+   /* changing color of rename */
+     .fixed.bottom-0.inset-x-0.px-4.pb-4 > div:first-child > div {
+        background: rgba(0 0 0 / 70%);
+     }
+     .fixed.bottom-0.inset-x-0.px-4.pb-4 > div:last-child {
+         filter: invert(.9);
+     }
+  #+END_SRC
+* SY extra and experimental
+* SY DISABLED 
+  I just removed the CSS in #+BEGIN_SRC css to disable it, I have to do it manually for all though
+** folding titles : bigger arrow / SY DISABLED
+   this was causing a strange mouse hover effect, where bullet points where shaking constantly
+ #+BEGIN_SRC
+   /*==================================================*/
+   /* == folding titles : bigger arrow == */
+   /*==================================================*/
+
+   a.block-control {
+     margin: -0.4rem 10px 0px 0;
+     padding: 0 24px 0 15px;
+     margin-left: -30px !important;
+   }
+   a.block-control > .w-4 {
+     width: 1.3rem;
+   }
+   a.block-control > .h-4 {
+     height: 1.3rem;
+   }
+   .initial .blocks-container.flex-1 {
+     margin-left: 3px !important;
+   }
+ #+END_SRC
+
+** right side bar
+ #+BEGIN_SRC csr
+   /*==================================================*/
+   /* == right sidebar == */
+   /*==================================================*/
+   .cp__right-sidebar {
+     position: fixed;
+     top: 3rem;
+     right: 0;
+     width: 0;
+     opacity: 0.5;
+     height: 102vh; /*calc(100vh - 3rem);*/
+     overflow-x: hidden;
+     overflow-y: auto;
+     z-index: 9;
+     transition: width 0.3s, opacity 0.2s;
+     border-radius: var(--ls-border-radius-low) 0 0 0;
+     box-sizing: border-box;
+     background-color: var(--ls-secondary-background-color, #d8e1e8);
+     padding-bottom: 48px;
+   }
+ #+END_SRC
+** fonts
+   #+BEGIN_SRC css
+     /*==================================================*/
+     /* == fonts == */
+     /*==================================================*/
+     html {
+         /* font-family: Cairo, Inter, sans-serif, system-ui, -apple-system,
+         BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
+         serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol !important; */
+         /*
+       #OFF:10 font html off
+        ,*/
+     }
+   #+END_SRC
 ** change look of image resize handle
  #+BEGIN_SRC css
    /*==================================================*/
@@ -1112,228 +1158,213 @@ html[data-theme=dark] {
      z-index:10;
    }	 */
  #+END_SRC
-** unordered lists
- #+BEGIN_SRC css
-   /*==================================================*/
-   /*===== unordered lists =========*/
-   /*==================================================*/
-   ul {
-     list-style-type: square;
-     margin-top: 10px;
-   }
-   ul li::marker {
-     font-size: 10px;
-   }
-   /*==================================================*/
-   .left {
-     float: left;
-     margin: 20px 20px 20px 0px;
-   }
-   .right {
-     float: right;
-     margin: 20px 0px 20px 20px;
-   }
-
- #+END_SRC
-** fix spacing - TWEAK VALUES!
- #+BEGIN_SRC css
+** fix spacing - TWEAK VALUES! / DISABLE
+   this was messing up the the plugin "bullet threading" it needed to be disabled, orginally created by cannibalox
+ #+BEGIN_SRC
    /* ==== fix spacing - TWEAK VALUES ! ===*/
    .ls-block {
      margin: -2px 0px -2px -1px !important;
      padding: 4px 1px !important;
    }
   #+END_SRC
-** highlight current path by cannnibalox v0.1
-  #+BEGIN_SRC css
-   /*==================================================*/
-   /* === highlight current path by cannnibalox v0.1 ===*/
-   /*==================================================*/
-
-   .ls-block .bullet {
-     background-color: #961327;
-   }
-
-   .ls-block:not(:focus-within) > div:first-child .bullet {
-     background-color: var(--ls-block-bullet-color);
-   }
- #+END_SRC
-** ----------------------- additional tweaks
-  take from Piotr
- #+BEGIN_SRC css
-     /*==================================================*/
-   /* changing color of rename */
-     .fixed.bottom-0.inset-x-0.px-4.pb-4 > div:first-child > div {
-        background: rgba(0 0 0 / 70%);
-     }
-     .fixed.bottom-0.inset-x-0.px-4.pb-4 > div:last-child {
-         filter: invert(.9);
-     }
-  #+END_SRC
-* experimental
 ** colorful indent levels
- #+BEGIN_SRC css
-   /* ==== colorful indent levels ===*/
-.block-children {
-     border-left: 1px solid;
-   }
-   .block-children [level="3"] {
-     border-left: 1px solid;
-     border-left-color: #d3a628;
-   }
-   .block-children [level="4"] {
-     border-left: 1px solid;
-     border-left-color: #c5c5c5;
-   }
-   .block-children [level="5"] {
-     border-left: 1px solid;
-     border-left-color: #d3a628;
-   }
-   .block-children [level="6"] {
-     border-left: 1px solid;
-     border-left-color: #c5c5c5;
-   }
-   .block-children [level="7"] {
-     border-left: 1px solid;
-     border-left-color: #d3a628;
-   }
-   .block-children [level="8"] {
-     border-left: 1px solid;
-     border-left-color: #c5c5c5;
-   }
-   .block-children [level="9"] {
-     border-left: 1px solid;
-     border-left-color: #d3a628;
-   }
-   .block-children [level="10"] {
-     border-left: 1px solid;
-     border-left-color: #d3a628;
-   }
+   this was customized by myself, I think cannibalox might have made the code, or I might have made it, really not sure, ups 
+  #+BEGIN_SRC
+    /* ==== colorful indent levels ===*/
+ .block-children {
+      border-left: 1px solid;
+    }
+    .block-children [level="3"] {
+      border-left: 5px solid;
+      border-left-color: #d3a628;
+    }
+    .block-children [level="4"] {
+      border-left: 1px solid;
+      border-left-color: #c5c5c5;
+    }
+    .block-children [level="5"] {
+      border-left: 1px solid;
+      border-left-color: #d3a628;
+    }
+    .block-children [level="6"] {
+      border-left: 1px solid;
+      border-left-color: #c5c5c5;
+    }
+    .block-children [level="7"] {
+      border-left: 1px solid;
+      border-left-color: #d3a628;
+    }
+    .block-children [level="8"] {
+      border-left: 1px solid;
+      border-left-color: #c5c5c5;
+    }
+    .block-children [level="9"] {
+      border-left: 1px solid;
+      border-left-color: #d3a628;
+    }
+    .block-children [level="10"] {
+      border-left: 1px solid;
+      border-left-color: #d3a628;
+    }
 
-   .block-children [level="11"] {
-     border-left: 1px solid;
-     border-left-color: #d3a628;
-   }
+    .block-children [level="11"] {
+      border-left: 1px solid;
+      border-left-color: #d3a628;
+    }
 
-   .block-children [level="12"] {
-     border-left: 1px solid;
-     border-left-color: #d3a628;
-   }
+    .block-children [level="12"] {
+      border-left: 1px solid;
+      border-left-color: #d3a628;
+    }
 
-   .block-children [level="13"] {
-     border-left: 1px solid;
-     border-left-color: #d3a628;
-   }
+    .block-children [level="13"] {
+      border-left: 1px solid;
+      border-left-color: #d3a628;
+    }
 
-   .block-children [level="14"] {
-     border-left: 1px solid;
-     border-left-color: #d3a628;
-   }
+    .block-children [level="14"] {
+      border-left: 1px solid;
+      border-left-color: #d3a628;
+    }
 
-   .block-children [level="15"] {
-     border-left: 1px solid;
-     border-left-color: #d3a628;
-   }
+    .block-children [level="15"] {
+      border-left: 1px solid;
+      border-left-color: #d3a628;
+    }
 
-   .block-children [level="16"] {
-     border-left: 1px solid;
-     border-left-color: #d3a628;
-   }
+    .block-children [level="16"] {
+      border-left: 1px solid;
+      border-left-color: #d3a628;
+    }
 
-   .block-children [level="17"] {
-     border-left: 1px solid;
-     border-left-color: #d3a628;
-   }
-   .block-children [level="18"] {
-     border-left: 1px solid;
-     border-left-color: #d3a628;
-   }
-   .block-children [level="19"] {
-     border-left: 1px solid;
-     border-left-color: #d3a628;
-   }
-   .block-children [level="20"] {
-     border-left: 1px solid;
-     border-left-color: #d3a628;
-   }
-   .block-children [level="21"] {
-     border-left: 1px solid;
-     border-left-color: #d3a628;
-   }
-   .block-children [level="22"] {
-     border-left: 1px solid;
-     border-left-color: #d3a628;
-   }
-   .block-children [level="23"] {
-     border-left: 1px solid;
-     border-left-color: #d3a628;
-   }
-   .block-children [level="24"] {
-     border-left: 1px solid;
-     border-left-color: #d3a628;
-   }
-   .block-children [level="25"] {
-     border-left: 1px solid;
-     border-left-color: #d3a628;
-   }
-   .block-children [level="26"] {
-     border-left: 1px solid;
-     border-left-color: #d3a628;
-   }
-   .block-children [level="27"] {
-     border-left: 1px solid;
-     border-left-color: #d3a628;
-   }
-   .block-children [level="28"] {
-     border-left: 1px solid;
-     border-left-color: #d3a628;
-   }
-   .block-children [level="29"] {
-     border-left: 1px solid;
-     border-left-color: #d3a628;
-   }
-   .block-children [level="30"] {
-     border-left: 1px solid;
-     border-left-color: #d3a628;
-   }
-   .block-children [level="31"] {
-     border-left: 1px solid;
-     border-left-color: #d3a628;
-   }
-   .block-children [level="32"] {
-     border-left: 1px solid;
-     border-left-color: #d3a628;
-   }
-   .block-children [level="33"] {
-     border-left: 1px solid;
-     border-left-color: #d3a628;
-   }
-   .block-children [level="34"] {
-     border-left: 1px solid;
-     border-left-color: #d3a628;
-   }
-   .block-children [level="35"] {
-     border-left: 1px solid;
-     border-left-color: #d3a628;
-   }
-   .block-children [level="36"] {
-     border-left: 1px solid;
-     border-left-color: #d3a628;
-   }
-   .block-children [level="37"] {
-     border-left: 1px solid;
-     border-left-color: #d3a628;
-   }
-   .block-children [level="38"] {
-     border-left: 1px solid;
-     border-left-color: #d3a628;
-   }
-   .block-children [level="39"] {
-     border-left: 1px solid;
-     border-left-color: #d3a628;
-   }
-   .block-children [level="40"] {
-     border-left: 1px solid;
-     border-left-color: #d3a628;
-   }
+    .block-children [level="17"] {
+      border-left: 1px solid;
+      border-left-color: #d3a628;
+    }
+    .block-children [level="18"] {
+      border-left: 1px solid;
+      border-left-color: #d3a628;
+    }
+    .block-children [level="19"] {
+      border-left: 1px solid;
+      border-left-color: #d3a628;
+    }
+    .block-children [level="20"] {
+      border-left: 1px solid;
+      border-left-color: #d3a628;
+    }
+    .block-children [level="21"] {
+      border-left: 1px solid;
+      border-left-color: #d3a628;
+    }
+    .block-children [level="22"] {
+      border-left: 1px solid;
+      border-left-color: #d3a628;
+    }
+    .block-children [level="23"] {
+      border-left: 1px solid;
+      border-left-color: #d3a628;
+    }
+    .block-children [level="24"] {
+      border-left: 1px solid;
+      border-left-color: #d3a628;
+    }
+    .block-children [level="25"] {
+      border-left: 1px solid;
+      border-left-color: #d3a628;
+    }
+    .block-children [level="26"] {
+      border-left: 1px solid;
+      border-left-color: #d3a628;
+    }
+    .block-children [level="27"] {
+      border-left: 1px solid;
+      border-left-color: #d3a628;
+    }
+    .block-children [level="28"] {
+      border-left: 1px solid;
+      border-left-color: #d3a628;
+    }
+    .block-children [level="29"] {
+      border-left: 1px solid;
+      border-left-color: #d3a628;
+    }
+    .block-children [level="30"] {
+      border-left: 1px solid;
+      border-left-color: #d3a628;
+    }
+    .block-children [level="31"] {
+      border-left: 1px solid;
+      border-left-color: #d3a628;
+    }
+    .block-children [level="32"] {
+      border-left: 1px solid;
+      border-left-color: #d3a628;
+    }
+    .block-children [level="33"] {
+      border-left: 1px solid;
+      border-left-color: #d3a628;
+    }
+    .block-children [level="34"] {
+      border-left: 1px solid;
+      border-left-color: #d3a628;
+    }
+    .block-children [level="35"] {
+      border-left: 1px solid;
+      border-left-color: #d3a628;
+    }
+    .block-children [level="36"] {
+      border-left: 1px solid;
+      border-left-color: #d3a628;
+    }
+    .block-children [level="37"] {
+      border-left: 1px solid;
+      border-left-color: #d3a628;
+    }
+    .block-children [level="38"] {
+      border-left: 1px solid;
+      border-left-color: #d3a628;
+    }
+    .block-children [level="39"] {
+      border-left: 1px solid;
+      border-left-color: #d3a628;
+    }
+    .block-children [level="40"] {
+      border-left: 1px solid;
+      border-left-color: #d3a628;
+    }
 
- #+END_SRC
+  #+END_SRC
+** blocks children tree line
+   this messed up bullet threading plugin, but it might be a way to change line color
+ #+BEGIN_SRC
+   /*==================================================*/
+   /* == blocks children tree line == */
+   /*==================================================*/
+
+ /* not working */
+   /* .block-children { */
+   /*   border-left: 1px solid; */
+   /*   border-left-color: var(--ls-guideline-color, #ddd); */
+   /*   /\* border-left-color: #ff0000; *\/ */
+   /*   left: -5px; */
+   /*   position: relative; */
+   /* } */
+   #+END_SRC
+
+** SY test changing color of blue default vertical lines
+   this code didn't work, but I tweaked it in the inspector and it seemed like it would have worked
+ #+BEGIN_SRC
+   .block-children-left-border {
+       z-index: 1;
+       position: absolute;
+       height: 100%;
+       width: 2.7px;
+       padding-right: 0px;
+       border-radius: 15px;
+       background-color: indianred;
+       left: -1px;
+       transition: background-color 0.2s;
+   }
+   #+END_SRC
+   

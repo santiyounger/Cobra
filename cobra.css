@@ -1,6 +1,6 @@
 /* ---------------
-2022-05-03_15-02
-       --------------- */
+
+  --------------- */
 
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600&family=Barlow:wght@400;700;900&display=swap");
      .white-theme
@@ -185,18 +185,6 @@ html[data-theme=dark] {
      }
 
 /*==================================================*/
-/* == fonts == */
-/*==================================================*/
-html {
-    /* font-family: Cairo, Inter, sans-serif, system-ui, -apple-system,
-    BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
-    serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol !important; */
-    /*
-  #OFF:10 font html off
-   */
-}
-
-/*==================================================*/
 /* header                                           */
 /*==================================================*/
 
@@ -226,19 +214,6 @@ html {
   padding: 0;
   max-width: var(--main-container-width); /* wider main container */
 }
-
-/*==================================================*/
-  /* == blocks children tree line == */
-  /*==================================================*/
-
-/* not working */
-  /* .block-children { */
-  /*   border-left: 1px solid; */
-  /*   border-left-color: var(--ls-guideline-color, #ddd); */
-  /*   /\* border-left-color: #ff0000; *\/ */
-  /*   left: -5px; */
-  /*   position: relative; */
-  /* } */
 
 /*==================================================*/
 /* == search deco == */
@@ -724,25 +699,6 @@ h1.title {
 }
 
 /*==================================================*/
-/* == folding titles : bigger arrow == */
-/*==================================================*/
-
-a.block-control {
-  margin: -0.4rem 10px 0px 0;
-  padding: 0 24px 0 15px;
-  margin-left: -30px !important;
-}
-a.block-control > .w-4 {
-  width: 1.3rem;
-}
-a.block-control > .h-4 {
-  height: 1.3rem;
-}
-.initial .blocks-container.flex-1 {
-  margin-left: 3px !important;
-}
-
-/*==================================================*/
 /* === tags ====*/
 /*==================================================*/
 
@@ -973,31 +929,6 @@ a.external-link:after {
 }
 
 /*==================================================*/
-/*===== change look of image resize handle =========*/
-/*==================================================*/
-/* .ls-block img {
-    box-shadow: none;
-}
-.resize:hover	{
-    border: 1px dotted #18aeab ;
-}
-.resize::after {
-    pointer-events: none;
-    content: "⇲";
-  font-size: 14px;
-  font-family: arial;
-    position: absolute;
-    height: 12px;
-    width: 12px;
-    text-align: center;
-    bottom: 8px;
-    right: 4px;
-    background-color: rgb(32, 32, 32);
-    color: #fff;
-  z-index:10;
-}	 */
-
-/*==================================================*/
 /*===== unordered lists =========*/
 /*==================================================*/
 ul {
@@ -1015,12 +946,6 @@ ul li::marker {
 .right {
   float: right;
   margin: 20px 0px 20px 20px;
-}
-
-/* ==== fix spacing - TWEAK VALUES ! ===*/
-.ls-block {
-  margin: -2px 0px -2px -1px !important;
-  padding: 4px 1px !important;
 }
 
 /*==================================================*/
@@ -1044,166 +969,39 @@ ul li::marker {
       filter: invert(.9);
   }
 
-/* ==== colorful indent levels ===*/
-.block-children {
-     border-left: 1px solid;
-   }
-   .block-children [level="3"] {
-     border-left: 1px solid;
-     border-left-color: #d3a628;
-   }
-   .block-children [level="4"] {
-     border-left: 1px solid;
-     border-left-color: #c5c5c5;
-   }
-   .block-children [level="5"] {
-     border-left: 1px solid;
-     border-left-color: #d3a628;
-   }
-   .block-children [level="6"] {
-     border-left: 1px solid;
-     border-left-color: #c5c5c5;
-   }
-   .block-children [level="7"] {
-     border-left: 1px solid;
-     border-left-color: #d3a628;
-   }
-   .block-children [level="8"] {
-     border-left: 1px solid;
-     border-left-color: #c5c5c5;
-   }
-   .block-children [level="9"] {
-     border-left: 1px solid;
-     border-left-color: #d3a628;
-   }
-   .block-children [level="10"] {
-     border-left: 1px solid;
-     border-left-color: #d3a628;
-   }
+/*==================================================*/
+/* == fonts == */
+/*==================================================*/
+html {
+    /* font-family: Cairo, Inter, sans-serif, system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
+    serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol !important; */
+    /*
+  #OFF:10 font html off
+   */
+}
 
-   .block-children [level="11"] {
-     border-left: 1px solid;
-     border-left-color: #d3a628;
-   }
-
-   .block-children [level="12"] {
-     border-left: 1px solid;
-     border-left-color: #d3a628;
-   }
-
-   .block-children [level="13"] {
-     border-left: 1px solid;
-     border-left-color: #d3a628;
-   }
-
-   .block-children [level="14"] {
-     border-left: 1px solid;
-     border-left-color: #d3a628;
-   }
-
-   .block-children [level="15"] {
-     border-left: 1px solid;
-     border-left-color: #d3a628;
-   }
-
-   .block-children [level="16"] {
-     border-left: 1px solid;
-     border-left-color: #d3a628;
-   }
-
-   .block-children [level="17"] {
-     border-left: 1px solid;
-     border-left-color: #d3a628;
-   }
-   .block-children [level="18"] {
-     border-left: 1px solid;
-     border-left-color: #d3a628;
-   }
-   .block-children [level="19"] {
-     border-left: 1px solid;
-     border-left-color: #d3a628;
-   }
-   .block-children [level="20"] {
-     border-left: 1px solid;
-     border-left-color: #d3a628;
-   }
-   .block-children [level="21"] {
-     border-left: 1px solid;
-     border-left-color: #d3a628;
-   }
-   .block-children [level="22"] {
-     border-left: 1px solid;
-     border-left-color: #d3a628;
-   }
-   .block-children [level="23"] {
-     border-left: 1px solid;
-     border-left-color: #d3a628;
-   }
-   .block-children [level="24"] {
-     border-left: 1px solid;
-     border-left-color: #d3a628;
-   }
-   .block-children [level="25"] {
-     border-left: 1px solid;
-     border-left-color: #d3a628;
-   }
-   .block-children [level="26"] {
-     border-left: 1px solid;
-     border-left-color: #d3a628;
-   }
-   .block-children [level="27"] {
-     border-left: 1px solid;
-     border-left-color: #d3a628;
-   }
-   .block-children [level="28"] {
-     border-left: 1px solid;
-     border-left-color: #d3a628;
-   }
-   .block-children [level="29"] {
-     border-left: 1px solid;
-     border-left-color: #d3a628;
-   }
-   .block-children [level="30"] {
-     border-left: 1px solid;
-     border-left-color: #d3a628;
-   }
-   .block-children [level="31"] {
-     border-left: 1px solid;
-     border-left-color: #d3a628;
-   }
-   .block-children [level="32"] {
-     border-left: 1px solid;
-     border-left-color: #d3a628;
-   }
-   .block-children [level="33"] {
-     border-left: 1px solid;
-     border-left-color: #d3a628;
-   }
-   .block-children [level="34"] {
-     border-left: 1px solid;
-     border-left-color: #d3a628;
-   }
-   .block-children [level="35"] {
-     border-left: 1px solid;
-     border-left-color: #d3a628;
-   }
-   .block-children [level="36"] {
-     border-left: 1px solid;
-     border-left-color: #d3a628;
-   }
-   .block-children [level="37"] {
-     border-left: 1px solid;
-     border-left-color: #d3a628;
-   }
-   .block-children [level="38"] {
-     border-left: 1px solid;
-     border-left-color: #d3a628;
-   }
-   .block-children [level="39"] {
-     border-left: 1px solid;
-     border-left-color: #d3a628;
-   }
-   .block-children [level="40"] {
-     border-left: 1px solid;
-     border-left-color: #d3a628;
-   }
+/*==================================================*/
+/*===== change look of image resize handle =========*/
+/*==================================================*/
+/* .ls-block img {
+    box-shadow: none;
+}
+.resize:hover	{
+    border: 1px dotted #18aeab ;
+}
+.resize::after {
+    pointer-events: none;
+    content: "⇲";
+  font-size: 14px;
+  font-family: arial;
+    position: absolute;
+    height: 12px;
+    width: 12px;
+    text-align: center;
+    bottom: 8px;
+    right: 4px;
+    background-color: rgb(32, 32, 32);
+    color: #fff;
+  z-index:10;
+}	 */
